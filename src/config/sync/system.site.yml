@@ -1,0 +1,14 @@
+uuid: 0ef2d244-80fd-4115-8ee4-2b1b674b3366
+name: 'Backend Gamers Assembly'
+mail: contact@bmagic.fr
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: fr
+default_langcode: fr
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

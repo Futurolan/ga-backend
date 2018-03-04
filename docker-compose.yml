@@ -1,0 +1,19 @@
+version: '3.1'
+
+services:
+  drupal:
+    image: registry.gitlab.com/janpoboril/drupal-composer-docker:7.1-apache
+    ports:
+      - "8080:80"
+    volumes:
+      - ./src:/var/www/drupal
+  mysql:
+    image: mysql:5.6
+    container_name: mysql-ga
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
+      MYSQL_DATABASE: drupal
+    volumes:
+      - ./db:/var/lib/mysql
