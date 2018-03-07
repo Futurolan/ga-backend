@@ -1,0 +1,11 @@
+uuid: e80404e7-d601-4759-86bb-708d71d7bebc
+langcode: fr
+status: true
+dependencies: {  }
+name: Edition
+type: edition
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

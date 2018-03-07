@@ -1,0 +1,29 @@
+uuid: e11f19f9-797e-42fc-98c7-c3538554e8e5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.edition.field_edition_startdate
+    - node.type.edition
+  module:
+    - datetime
+    - user
+id: node.edition.default
+targetEntityType: node
+bundle: edition
+mode: default
+content:
+  field_edition_startdate:
+    weight: 101
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

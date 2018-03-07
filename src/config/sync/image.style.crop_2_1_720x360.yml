@@ -1,0 +1,24 @@
+uuid: b5288a44-e0cc-4146-97b7-28f9e92ed194
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.crop_2_1
+  module:
+    - crop
+name: crop_2_1_720x360
+label: 'Crop 2:1 - 720x360'
+effects:
+  95732056-06fc-4588-bda5-7f3151db25ae:
+    uuid: 95732056-06fc-4588-bda5-7f3151db25ae
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_2_1
+  c46abac1-1781-4774-b0e7-328786ffaab5:
+    uuid: c46abac1-1781-4774-b0e7-328786ffaab5
+    id: image_resize
+    weight: 2
+    data:
+      width: 720
+      height: 360

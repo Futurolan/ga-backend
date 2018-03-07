@@ -1,0 +1,24 @@
+uuid: 00329882-bb73-41b1-beaa-3b73288d6de9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.crop_2_1
+  module:
+    - crop
+name: crop_2_1_288x144
+label: 'Crop 2:1 - 288x144'
+effects:
+  858532b0-b07c-4344-8495-b447a3e664a3:
+    uuid: 858532b0-b07c-4344-8495-b447a3e664a3
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_2_1
+  f10f49b9-a2e7-4e2b-930a-45b6ce765701:
+    uuid: f10f49b9-a2e7-4e2b-930a-45b6ce765701
+    id: image_resize
+    weight: 2
+    data:
+      width: 288
+      height: 144

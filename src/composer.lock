@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "539d07d1ef8bead16366d4ebb773d0f7",
+    "content-hash": "6f2467743434f251863994a57dd1854f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1521,71 +1521,6 @@
             }
         },
         {
-            "name": "drupal/bootstrap",
-            "version": "3.10.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/bootstrap",
-                "reference": "8.x-3.10"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.10.zip",
-                "reference": "8.x-3.10",
-                "shasum": "1e7c45906fa3fe990868da53a336e702113cd66a"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.10",
-                    "datestamp": "1519144980",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Mark Carver (markcarver)",
-                    "homepage": "https://www.drupal.org/u/markcarver",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "John McCormick (neardark)",
-                    "homepage": "https://www.drupal.org/u/neardark",
-                    "role": "Co-maintainer"
-                },
-                {
-                    "name": "Fabiano Sant'Ana (wundo)",
-                    "homepage": "https://www.drupal.org/u/wundo",
-                    "role": "Co-maintainer"
-                },
-                {
-                    "name": "wundo",
-                    "homepage": "https://www.drupal.org/user/25523"
-                }
-            ],
-            "description": "Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.",
-            "homepage": "https://www.drupal.org/project/bootstrap",
-            "support": {
-                "source": "http://cgit.drupalcode.org/bootstrap",
-                "docs": "https://drupal-bootstrap.org",
-                "issues": "https://www.drupal.org/project/issues/bootstrap",
-                "irc": "irc://irc.freenode.org/drupal-bootstrap"
-            }
-        },
-        {
             "name": "drupal/config_readonly",
             "version": "1.0.0-beta3",
             "source": {
@@ -2097,18 +2032,68 @@
             "time": "2018-02-20T21:35:13+00:00"
         },
         {
-            "name": "drupal/graphql",
-            "version": "3.0.0-beta5",
+            "name": "drupal/crop",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/graphql",
-                "reference": "8.x-3.0-beta5"
+                "url": "https://git.drupal.org/project/crop",
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/graphql-8.x-3.0-beta5.zip",
-                "reference": "8.x-3.0-beta5",
-                "shasum": "46048351613449892f4de9715cfc526df1dc2cf7"
+                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "bb275293508cb3988ca6ab766dc1f6ecc22cc03d"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1516357085",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Drupal Media Team",
+                    "homepage": "https://www.drupal.org/user/3260690"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "woprrr",
+                    "homepage": "https://www.drupal.org/user/858604"
+                }
+            ],
+            "description": "Provides storage and API for image crops.",
+            "homepage": "https://www.drupal.org/project/crop",
+            "support": {
+                "source": "http://cgit.drupalcode.org/crop",
+                "issues": "https://www.drupal.org/project/issues/crop"
+            }
+        },
+        {
+            "name": "drupal/graphql",
+            "version": "dev-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/graphql",
+                "reference": "323b0407cd955803a0be51ec7c4f621071faa89d"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -2120,11 +2105,11 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta5",
-                    "datestamp": "1518194880",
+                    "version": "8.x-3.0-beta5+19-dev",
+                    "datestamp": "1518525480",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2146,78 +2131,46 @@
             "homepage": "http://drupal.org/project/graphql",
             "support": {
                 "source": "http://cgit.drupalcode.org/graphql"
-            }
+            },
+            "time": "2018-02-13T13:36:35+00:00"
         },
         {
-            "name": "drupal/graphql_core",
-            "version": "3.0.0-beta5",
-            "require": {
-                "drupal/core": "~8.0",
-                "drupal/graphql": "self.version"
-            },
-            "type": "metapackage",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.0-beta5",
-                    "datestamp": "1518194880",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "fubhy",
-                    "homepage": "https://www.drupal.org/user/761344"
-                },
-                {
-                    "name": "pmelab",
-                    "homepage": "https://www.drupal.org/user/555322"
-                }
-            ],
-            "description": "Provides type system plugins and derivers on behalf of core modules.",
-            "homepage": "https://www.drupal.org/project/graphql",
-            "support": {
-                "source": "http://cgit.drupalcode.org/graphql"
-            }
-        },
-        {
-            "name": "drupal/graphql_views",
-            "version": "1.0.0-alpha3",
+            "name": "drupal/image_widget_crop",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/graphql_views",
-                "reference": "8.x-1.0-alpha3"
+                "url": "https://git.drupal.org/project/image_widget_crop",
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/graphql_views-8.x-1.0-alpha3.zip",
-                "reference": "8.x-1.0-alpha3",
-                "shasum": "41f812710b194f2eec732d0750793e8d2606fd3c"
+                "url": "https://ftp.drupal.org/files/projects/image_widget_crop-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "76bda9a8c8d3149149bb7812e48e9f14e9ce1ffb"
             },
             "require": {
                 "drupal/core": "*",
-                "drupal/graphql_core": "*"
+                "drupal/crop": "1.0 - 2.0"
+            },
+            "require-dev": {
+                "drupal/crop": "*",
+                "drupal/ctools": "3.x-dev",
+                "drupal/entity_browser": "1.x-dev",
+                "drupal/file_entity": "*",
+                "drupal/inline_entity_form": "*",
+                "drupal/media": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha3",
-                    "datestamp": "1517832480",
+                    "version": "8.x-2.1",
+                    "datestamp": "1510136887",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -2227,18 +2180,34 @@
             ],
             "authors": [
                 {
-                    "name": "fubhy",
-                    "homepage": "https://www.drupal.org/user/761344"
+                    "name": "Alexandre Mallet",
+                    "homepage": "https://github.com/woprrr",
+                    "role": "Maintainer"
                 },
                 {
-                    "name": "pmelab",
-                    "homepage": "https://www.drupal.org/user/555322"
+                    "name": "Drupal media CI",
+                    "homepage": "https://www.drupal.org/user/3057985"
+                },
+                {
+                    "name": "slashrsm",
+                    "homepage": "https://www.drupal.org/user/744628"
+                },
+                {
+                    "name": "woprrr",
+                    "homepage": "https://www.drupal.org/user/858604"
                 }
             ],
-            "description": "Exposes your Drupal Views data model through a GraphQL schema.",
-            "homepage": "http://drupal.org/project/graphql_views",
+            "description": "Provides an interface for using the features of the Crop API.",
+            "homepage": "https://www.drupal.org/project/image_widget_crop",
+            "keywords": [
+                "Crop",
+                "Drupal",
+                "Drupal Media"
+            ],
             "support": {
-                "source": "http://cgit.drupalcode.org/graphql_views"
+                "source": "https://www.drupal.org/project/image_widget_crop",
+                "issues": "https://www.drupal.org/project/issues/image_widget_crop",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
             }
         },
         {
@@ -6870,7 +6839,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/graphql": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

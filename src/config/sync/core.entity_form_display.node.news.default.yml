@@ -1,0 +1,67 @@
+uuid: 1624c98d-79a2-46b2-bfa8-5637912657f9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.news.field_news_editions
+    - field.field.node.news.field_news_image
+    - image.style.crop_2_1_288x144
+    - node.type.news
+  module:
+    - image_widget_crop
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_news_editions:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_news_image:
+    type: image_widget_crop
+    weight: 1
+    region: content
+    settings:
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: crop_2_1_288x144
+      crop_preview_image_style: crop_preview
+      crop_list:
+        - crop_2_1
+      progress_indicator: throbber
+      show_crop_area: false
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  promote: true
+  status: true
+  sticky: true

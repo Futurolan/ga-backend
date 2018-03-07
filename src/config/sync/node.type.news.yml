@@ -1,0 +1,11 @@
+uuid: 5c61173e-54d7-4019-9707-bf4d39f67a5b
+langcode: fr
+status: true
+dependencies: {  }
+name: News
+type: news
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false
