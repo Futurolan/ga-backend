@@ -1,15 +1,14 @@
-FROM drupal:8.4.4
-
-WORKDIR /var/www/html
-
-RUN usermod -u 1000 www-data
-RUN groupmod -g 1000 www-data
-
-COPY src/modules modules
-COPY src/sync sync
-COPY src/themes themes
+FROM registry.gitlab.com/janpoboril/drupal-composer-docker:7.1-apache
 
 
-EXPOSE 80
+COPY src /var/www/drupal
 
 
+
+RUN chown -R www-data /var/www
+
+USER www-data
+RUN chmod +w /var/www/drupal/web/sites/default
+RUN composer install
+
+USER root
