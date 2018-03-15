@@ -1,12 +1,12 @@
-uuid: 8e56f07d-680d-41e6-8667-6a5f8a431cca
+uuid: ef6c831a-351b-415c-95c5-bfd0d5d90f2e
 langcode: fr
 status: true
 dependencies: {  }
 name: crop_preview
 label: 'Crop preview'
 effects:
-  acf3d574-761e-4189-b8b5-022a89b48866:
-    uuid: acf3d574-761e-4189-b8b5-022a89b48866
+  07363414-0dac-482e-9048-1e8b1b18cbe1:
+    uuid: 07363414-0dac-482e-9048-1e8b1b18cbe1
     id: image_scale
     weight: 1
     data:

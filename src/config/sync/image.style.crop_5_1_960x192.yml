@@ -1,0 +1,24 @@
+uuid: 1a9210ce-149f-41b5-a042-f39b54eea318
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.crop_5_1
+  module:
+    - crop
+name: crop_5_1_960x192
+label: 'Crop 5:1 - 960x192'
+effects:
+  27ced8f3-9f0b-4e97-ac1d-e3a23fa120e1:
+    uuid: 27ced8f3-9f0b-4e97-ac1d-e3a23fa120e1
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_5_1
+  21614bb1-ddd3-4a5c-a908-80feddb4e4a0:
+    uuid: 21614bb1-ddd3-4a5c-a908-80feddb4e4a0
+    id: image_resize
+    weight: 2
+    data:
+      width: 960
+      height: 192

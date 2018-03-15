@@ -1,0 +1,12 @@
+uuid: fbd955d1-34e8-4152-a459-eb098b024e15
+langcode: fr
+status: true
+dependencies: {  }
+label: 'Crop 5:1'
+id: crop_5_1
+description: ''
+aspect_ratio: '5:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: null
+hard_limit_height: null

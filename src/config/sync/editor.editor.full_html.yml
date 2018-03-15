@@ -1,0 +1,58 @@
+uuid: 5946b799-acfe-4880-8547-fb83179f9085
+langcode: fr
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formats
+          items:
+            - Bold
+            - Italic
+        -
+          name: Liens
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Listes
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Média
+          items:
+            - Blockquote
+            - DrupalImage
+        -
+          name: Tools
+          items:
+            - Source
+        -
+          name: Position
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+  plugins:
+    language:
+      language_list: un
+    stylescombo:
+      styles: ''
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

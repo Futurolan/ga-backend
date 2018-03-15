@@ -3,18 +3,35 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.node.news.field_news_content
+    - field.field.node.news.field_news_description
     - field.field.node.news.field_news_editions
     - field.field.node.news.field_news_image
-    - image.style.crop_2_1_288x144
+    - image.style.crop_5_1_1345x269
     - node.type.news
   module:
     - image
+    - text
     - user
 id: node.news.default
 targetEntityType: node
 bundle: news
 mode: default
 content:
+  field_news_content:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_news_description:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
   field_news_editions:
     weight: 1
     label: above
@@ -29,7 +46,7 @@ content:
     region: content
     label: above
     settings:
-      image_style: crop_2_1_288x144
+      image_style: crop_5_1_1345x269
       image_link: ''
     third_party_settings: {  }
   links:

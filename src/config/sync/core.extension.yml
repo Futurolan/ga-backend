@@ -3,12 +3,15 @@ module:
   adminimal_admin_toolbar: 0
   block: 0
   breakpoint: 0
+  ckeditor: 0
   config_readonly: 0
   crop: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
+  editor: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
