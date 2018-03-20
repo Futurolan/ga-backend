@@ -10,7 +10,7 @@ field_name: field_news_description
 entity_type: node
 bundle: news
 label: Description
-description: ''
+description: 'Cette description est nécessaire pour le référencement et l''affichage sur les réseaux sociaux, mettez y une version résumée du texte de la news. '
 required: true
 translatable: false
 default_value: {  }

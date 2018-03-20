@@ -1,0 +1,8 @@
+uuid: 1e675f9c-8aed-46bd-908d-21c88b97e7da
+langcode: fr
+status: true
+dependencies: {  }
+id: moderator
+label: 'Menu de modérateur'
+description: ''
+locked: false

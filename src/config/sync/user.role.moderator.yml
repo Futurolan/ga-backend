@@ -1,0 +1,15 @@
+uuid: 94304d03-7d4a-40c5-a61f-355c1afd8b20
+langcode: fr
+status: true
+dependencies: {  }
+id: moderator
+label: Moderateur
+weight: 2
+is_admin: null
+permissions:
+  - 'create edition content'
+  - 'create news content'
+  - 'delete any edition content'
+  - 'delete any news content'
+  - 'edit any edition content'
+  - 'edit any news content'

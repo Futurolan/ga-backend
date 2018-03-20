@@ -12,7 +12,7 @@ field_name: field_news_image
 entity_type: node
 bundle: news
 label: Image
-description: ''
+description: "Ajoutez ici une image de la taille la plus importante possible. L'idéal étant une image d'au moins 1350 x 270. \r\nN'oubliez pas de la cropper."
 required: true
 translatable: false
 default_value: {  }

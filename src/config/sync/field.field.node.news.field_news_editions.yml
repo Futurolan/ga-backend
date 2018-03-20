@@ -11,7 +11,7 @@ field_name: field_news_editions
 entity_type: node
 bundle: news
 label: Editions
-description: ''
+description: "Liste des éditions où doit apparaître la news. \r\nLaisser vide pour la faire apparaître sur tous les sites."
 required: false
 translatable: false
 default_value: {  }

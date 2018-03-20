@@ -1,0 +1,5 @@
+name: GA Editions Ref Filter
+type: module
+description: Add a view reference filter for node type Editions
+core: 8.x
+package: Gamers Assembly

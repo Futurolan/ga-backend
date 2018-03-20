@@ -1,0 +1,9 @@
+uuid: af63b7f4-8829-4356-876c-72e4d841de41
+langcode: fr
+status: true
+dependencies: {  }
+id: moderation
+label: Moderation
+weight: null
+menu: moderator
+rewrite_label: false

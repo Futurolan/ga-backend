@@ -1,7 +1,13 @@
 uuid: 5c61173e-54d7-4019-9707-bf4d39f67a5b
 langcode: fr
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
 name: News
 type: news
 description: ''
