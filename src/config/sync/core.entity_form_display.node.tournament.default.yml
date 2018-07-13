@@ -1,17 +1,17 @@
-uuid: 41d8f62d-8544-4cd6-b118-a8bf6f241479
+uuid: b340e0c8-fef1-40cf-9ffb-ab68f4decc3a
 langcode: fr
 status: true
 dependencies:
   config:
-    - node.type.edition
-id: node.edition.default
+    - node.type.tournament
+id: node.tournament.default
 targetEntityType: node
-bundle: edition
+bundle: tournament
 mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -26,26 +26,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 15
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 120
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 16
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
@@ -53,7 +53,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60

@@ -1,14 +1,14 @@
-uuid: e11f19f9-797e-42fc-98c7-c3538554e8e5
+uuid: d3ead81f-eefc-4ed7-b0ac-972e4291c5f2
 langcode: fr
 status: true
 dependencies:
   config:
-    - node.type.edition
+    - node.type.tournament
   module:
     - user
-id: node.edition.default
+id: node.tournament.default
 targetEntityType: node
-bundle: edition
+bundle: tournament
 mode: default
 content:
   links:

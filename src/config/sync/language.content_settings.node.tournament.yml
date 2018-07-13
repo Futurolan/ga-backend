@@ -1,0 +1,11 @@
+uuid: e8059d33-4c55-44f8-8523-ea7f9e301121
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.tournament
+id: node.tournament
+target_entity_type_id: node
+target_bundle: tournament
+default_langcode: site_default
+language_alterable: false

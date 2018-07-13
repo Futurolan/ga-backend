@@ -1,0 +1,18 @@
+uuid: 30c1fc0d-cc6c-49c5-a729-d5bc75362d11
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.tournament
+id: node.tournament.title
+field_name: title
+entity_type: node
+bundle: tournament
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
