@@ -1,0 +1,19 @@
+uuid: f02a37d4-021e-4df8-99ef-af2b8af72c2a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_note
+    - node.type.page
+id: node.page.field_page_note
+field_name: field_page_note
+entity_type: node
+bundle: page
+label: Notes
+description: "Une petite note pour vous aider à vous retrouver dans la liste des pages.\r\nEx: Page de contact pour la GA Halloween "
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

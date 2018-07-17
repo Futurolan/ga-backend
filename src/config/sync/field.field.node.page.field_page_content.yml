@@ -1,0 +1,21 @@
+uuid: 1759f8d3-9980-4b81-82a3-52c693e9b0ec
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_content
+    - node.type.page
+  module:
+    - text
+id: node.page.field_page_content
+field_name: field_page_content
+entity_type: node
+bundle: page
+label: Contenu
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,46 @@
+uuid: 1bb58377-4b9d-4782-acf6-e8e5ffda6adc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.page.field_page_content
+    - field.field.node.page.field_page_description
+    - field.field.node.page.field_page_note
+    - node.type.page
+  module:
+    - text
+    - user
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  field_page_content:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_page_description:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_page_note:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
