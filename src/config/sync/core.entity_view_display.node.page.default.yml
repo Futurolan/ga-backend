@@ -8,39 +8,32 @@ dependencies:
     - field.field.node.page.field_page_note
     - node.type.page
   module:
-    - text
     - user
 id: node.page.default
 targetEntityType: node
 bundle: page
 mode: default
 content:
-  field_page_content:
-    weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_page_description:
-    weight: 1
+    type: basic_string
+    weight: 2
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
-    region: content
   field_page_note:
-    weight: 3
+    type: string
+    weight: 1
+    region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
-    region: content
   links:
     weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_page_content: true
   langcode: true
