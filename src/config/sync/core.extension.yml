@@ -6,6 +6,7 @@ module:
   breakpoint: 0
   ckeditor: 0
   config_readonly: 0
+  config_readonly_menu_ui: 0
   crop: 0
   datetime: 0
   dblog: 0

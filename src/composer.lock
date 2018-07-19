@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4b2f2a6644b3b2551b8bc0dd79f5352",
+    "content-hash": "f6ed170f0ec01b513e00a02e31a92aa9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1831,6 +1831,54 @@
             "homepage": "https://www.drupal.org/project/config_readonly",
             "support": {
                 "source": "http://cgit.drupalcode.org/config_readonly"
+            }
+        },
+        {
+            "name": "drupal/config_readonly_menu_ui",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/config_readonly_menu_ui",
+                "reference": "8.x-1.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_readonly_menu_ui-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "466e95ec9e598833fbc2d6e4189e40dccd007f33"
+            },
+            "require": {
+                "drupal/config_readonly": "*",
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1507797244",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "GaëlG",
+                    "homepage": "https://www.drupal.org/user/431210"
+                }
+            ],
+            "description": "Allows reordering of content menu links in readonly mode.",
+            "homepage": "https://www.drupal.org/project/config_readonly_menu_ui",
+            "support": {
+                "source": "http://cgit.drupalcode.org/config_readonly_menu_ui"
             }
         },
         {
