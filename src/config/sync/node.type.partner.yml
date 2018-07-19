@@ -1,4 +1,4 @@
-uuid: 5c61173e-54d7-4019-9707-bf4d39f67a5b
+uuid: eed3bb7d-ce7f-444f-9350-168755a293af
 langcode: fr
 status: true
 dependencies:
@@ -8,8 +8,8 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
-name: Actualité
-type: news
+name: Partenaire
+type: partner
 description: ''
 help: ''
 new_revision: false

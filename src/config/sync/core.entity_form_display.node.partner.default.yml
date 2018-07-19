@@ -1,0 +1,69 @@
+uuid: e5543516-e64e-4c72-9521-05430aaa2112
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.partner.field_partner_category
+    - field.field.node.partner.field_partner_edition
+    - field.field.node.partner.field_partner_image
+    - field.field.node.partner.field_partner_url
+    - field.field.node.partner.field_weight
+    - image.style.partner_150x150
+    - node.type.partner
+  module:
+    - image
+id: node.partner.default
+targetEntityType: node
+bundle: partner
+mode: default
+content:
+  field_partner_category:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_partner_edition:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete_tags
+    region: content
+  field_partner_image:
+    weight: 3
+    settings:
+      preview_image_style: partner_150x150
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_partner_url:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_weight: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

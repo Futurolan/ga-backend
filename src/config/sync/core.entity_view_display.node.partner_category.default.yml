@@ -1,0 +1,22 @@
+uuid: b3f6efcf-b0b3-4042-b65c-8659f01de3ee
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.partner_category.field_weight
+    - node.type.partner_category
+  module:
+    - user
+id: node.partner_category.default
+targetEntityType: node
+bundle: partner_category
+mode: default
+content:
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_weight: true
+  langcode: true

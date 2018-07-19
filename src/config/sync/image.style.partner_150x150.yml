@@ -1,0 +1,15 @@
+uuid: e08c82c9-1b5e-4a84-906b-33013b2539cc
+langcode: fr
+status: true
+dependencies: {  }
+name: partner_150x150
+label: 'Partner - 150x150'
+effects:
+  0ce0ce80-a343-4b22-a293-cf1c484eaf3f:
+    uuid: 0ce0ce80-a343-4b22-a293-cf1c484eaf3f
+    id: image_scale
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      upscale: true

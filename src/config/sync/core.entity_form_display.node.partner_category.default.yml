@@ -1,0 +1,28 @@
+uuid: 7ceafaa0-0e85-429e-83e5-933ca5767bc9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.partner_category.field_weight
+    - node.type.partner_category
+id: node.partner_category.default
+targetEntityType: node
+bundle: partner_category
+mode: default
+content:
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_weight: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

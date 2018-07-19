@@ -1,0 +1,11 @@
+uuid: c66c32cd-4416-4ab2-8245-b6add880bdab
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.partner_category
+id: node.partner_category
+target_entity_type_id: node
+target_bundle: partner_category
+default_langcode: site_default
+language_alterable: false

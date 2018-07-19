@@ -1,0 +1,5 @@
+name: GA Partner Category Ref Filter
+type: module
+description: Add a view reference filter for node type Partner Category
+core: 8.x
+package: Gamers Assembly

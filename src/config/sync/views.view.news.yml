@@ -665,6 +665,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               moderator: '0'
+              admin: '0'
             reduce: 0
           is_grouped: false
           group_info:
@@ -708,7 +709,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: "<ul class=\"action-links\">\n  <li>\n    <a class=\"button button-action button--primary button--small\" href=\"/node/add/news\">Ajouter une news</a>\n  </li>\n</ul>"
+          content: "<ul class=\"action-links\">\n  <li>\n    <a class=\"button button-action button--primary button--small\" href=\"/node/add/news?destination=/gadmin/news\">Ajouter une news</a>\n  </li>\n</ul>"
           plugin_id: text_custom
       footer: {  }
       empty: {  }

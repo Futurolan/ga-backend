@@ -1,0 +1,15 @@
+uuid: 19d605bc-7a1d-4df6-b4ab-fe61e11547e9
+langcode: fr
+status: true
+dependencies: {  }
+name: partner_50x50
+label: 'Partner - 50x50'
+effects:
+  376640e1-d7b2-4c69-a1c6-074a8c040d6f:
+    uuid: 376640e1-d7b2-4c69-a1c6-074a8c040d6f
+    id: image_scale
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      upscale: true
