@@ -1,0 +1,21 @@
+uuid: ea469ae2-4b0b-4a7a-8678-732c85502ebf
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tournament_planning
+    - node.type.tournament
+  module:
+    - text
+id: node.tournament.field_tournament_planning
+field_name: field_tournament_planning
+entity_type: node
+bundle: tournament
+label: Planning
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

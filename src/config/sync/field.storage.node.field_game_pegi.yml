@@ -1,0 +1,21 @@
+uuid: 3793bfd7-de06-46a5-ad12-c465e478eb2f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_game_pegi
+field_name: field_game_pegi
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

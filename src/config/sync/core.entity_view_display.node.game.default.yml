@@ -1,0 +1,77 @@
+uuid: d64f5568-ae51-4757-abe3-de91bfa7e75b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.game.field_game_color
+    - field.field.node.game.field_game_editor
+    - field.field.node.game.field_game_image
+    - field.field.node.game.field_game_pegi
+    - field.field.node.game.field_game_short_name
+    - field.field.node.game.field_game_type
+    - image.style.crop_5_1_1155x231
+    - node.type.game
+  module:
+    - image
+    - options
+    - user
+id: node.game.default
+targetEntityType: node
+bundle: game
+mode: default
+content:
+  field_game_color:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_game_editor:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_game_image:
+    weight: 2
+    label: above
+    settings:
+      image_style: crop_5_1_1155x231
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_game_pegi:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_game_short_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_game_type:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

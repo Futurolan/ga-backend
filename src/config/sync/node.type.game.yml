@@ -1,0 +1,17 @@
+uuid: 97bda333-1cba-4128-aa54-02727e1d70f0
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Jeu
+type: game
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

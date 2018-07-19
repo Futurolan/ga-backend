@@ -1,0 +1,19 @@
+uuid: 602a27ca-0a59-41a4-b9ee-45d915040b1a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tournament_cashprize_title
+    - node.type.tournament
+id: node.tournament.field_tournament_cashprize_title
+field_name: field_tournament_cashprize_title
+entity_type: node
+bundle: tournament
+label: 'Titre cashprize'
+description: 'Ex : Cashprize Lol - 10000€'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

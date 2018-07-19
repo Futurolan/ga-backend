@@ -1,0 +1,19 @@
+uuid: a89607e2-36cb-4828-8525-b4ba6fa6eb18
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tournament_cashprize_lines
+    - node.type.tournament
+id: node.tournament.field_tournament_cashprize_lines
+field_name: field_tournament_cashprize_lines
+entity_type: node
+bundle: tournament
+label: 'Ligne de cashprize'
+description: 'Ex: 1er - 3 000€'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

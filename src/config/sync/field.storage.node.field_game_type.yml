@@ -1,0 +1,48 @@
+uuid: a5067513-0265-4141-a8ff-22e86b2a3d72
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_game_type
+field_name: field_game_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: autres
+      label: Autres
+    -
+      value: battle_royale
+      label: 'Battle Royale'
+    -
+      value: course
+      label: Course
+    -
+      value: fps
+      label: FPS
+    -
+      value: jeu_de_cartes
+      label: 'Jeu de cartes'
+    -
+      value: moba
+      label: MOBA
+    -
+      value: rts
+      label: RTS
+    -
+      value: sport
+      label: Sport
+    -
+      value: versus_fighting
+      label: 'Versus fighting'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

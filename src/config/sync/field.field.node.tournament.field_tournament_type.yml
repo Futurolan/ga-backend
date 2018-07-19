@@ -1,0 +1,21 @@
+uuid: ae013729-e837-4d25-927c-38468b0d2520
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tournament_type
+    - node.type.tournament
+  module:
+    - options
+id: node.tournament.field_tournament_type
+field_name: field_tournament_type
+entity_type: node
+bundle: tournament
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

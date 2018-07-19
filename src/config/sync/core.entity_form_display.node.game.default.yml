@@ -1,56 +1,40 @@
-uuid: 1624c98d-79a2-46b2-bfa8-5637912657f9
+uuid: 89d468e1-ddf1-4450-ab12-c860766461a1
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.news.field_news_content
-    - field.field.node.news.field_news_description
-    - field.field.node.news.field_news_editions
-    - field.field.node.news.field_news_image
-    - node.type.news
+    - field.field.node.game.field_game_color
+    - field.field.node.game.field_game_editor
+    - field.field.node.game.field_game_image
+    - field.field.node.game.field_game_pegi
+    - field.field.node.game.field_game_short_name
+    - field.field.node.game.field_game_type
+    - node.type.game
   module:
     - image_widget_crop
-    - text
-id: node.news.default
+id: node.game.default
 targetEntityType: node
-bundle: news
+bundle: game
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 7
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_news_content:
-    weight: 4
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_news_description:
+  field_game_color:
     weight: 3
     settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textarea
-    region: content
-  field_news_editions:
-    weight: 1
-    settings:
-      match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete_tags
+    type: string_textfield
     region: content
-  field_news_image:
-    type: image_widget_crop
+  field_game_editor:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_game_image:
     weight: 2
-    region: content
     settings:
       show_crop_area: true
       show_default_crop: true
@@ -65,6 +49,30 @@ content:
         - crop_5_1
       progress_indicator: throbber
     third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  field_game_pegi:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_game_short_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_game_type:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   title:
     type: string_textfield
     weight: 0
@@ -73,17 +81,10 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 6
-    region: content
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
+  created: true
   langcode: true
   promote: true
   status: true
   sticky: true
+  uid: true

@@ -1,0 +1,18 @@
+uuid: a3376ee1-b1c6-410e-9119-4fa0fa16603a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.game
+id: node.game.title
+field_name: title
+entity_type: node
+bundle: game
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

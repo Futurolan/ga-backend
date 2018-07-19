@@ -1,0 +1,27 @@
+uuid: 1cedf624-4b91-490e-af6f-b3ace675dd26
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tournament_type
+field_name: field_tournament_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Solo
+      label: Solo
+    -
+      value: Equipe
+      label: Equipe
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

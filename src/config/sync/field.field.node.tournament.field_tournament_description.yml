@@ -1,0 +1,21 @@
+uuid: 80ce4c0d-5222-4423-903e-6f79def5d251
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tournament_description
+    - node.type.tournament
+  module:
+    - text
+id: node.tournament.field_tournament_description
+field_name: field_tournament_description
+entity_type: node
+bundle: tournament
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

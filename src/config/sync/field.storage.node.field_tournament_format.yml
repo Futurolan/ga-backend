@@ -1,0 +1,19 @@
+uuid: 6bd875d4-6022-423b-bd55-1b934fb19ad9
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_tournament_format
+field_name: field_tournament_format
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

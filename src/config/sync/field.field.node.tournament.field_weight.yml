@@ -1,0 +1,24 @@
+uuid: a0afd327-ca1d-44c6-8d93-8128de9d5e10
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.tournament
+  module:
+    - weight
+id: node.tournament.field_weight
+field_name: field_weight
+entity_type: node
+bundle: tournament
+label: Poids
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings:
+  range: '20'
+field_type: weight

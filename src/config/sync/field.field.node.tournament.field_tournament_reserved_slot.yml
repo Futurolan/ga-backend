@@ -1,0 +1,25 @@
+uuid: fa0f93ca-a733-4855-bd05-7f54bb2d4058
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tournament_reserved_slot
+    - node.type.tournament
+id: node.tournament.field_tournament_reserved_slot
+field_name: field_tournament_reserved_slot
+entity_type: node
+bundle: tournament
+label: 'Slot réservés'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

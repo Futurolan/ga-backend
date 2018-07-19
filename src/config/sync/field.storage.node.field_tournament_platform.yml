@@ -1,0 +1,33 @@
+uuid: f593404d-257b-47cb-9460-96afc5f5caf1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tournament_platform
+field_name: field_tournament_platform
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: pc
+      label: PC
+    -
+      value: ps4
+      label: PS4
+    -
+      value: wii_u
+      label: 'Wii U'
+    -
+      value: xbox_one
+      label: 'Xbox One'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
