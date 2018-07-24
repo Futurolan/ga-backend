@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.tournament.field_tournament_cashprize_lines
     - field.field.node.tournament.field_tournament_cashprize_title
     - field.field.node.tournament.field_tournament_description
+    - field.field.node.tournament.field_tournament_edition
     - field.field.node.tournament.field_tournament_format
     - field.field.node.tournament.field_tournament_game
     - field.field.node.tournament.field_tournament_image
@@ -30,7 +31,7 @@ third_party_settings:
         - field_tournament_cashprize_title
         - field_tournament_cashprize_lines
       parent_name: ''
-      weight: 9
+      weight: 10
       format_type: fieldset
       format_settings:
         id: ''
@@ -45,7 +46,7 @@ third_party_settings:
         - field_tournament_size
         - field_tournament_reserved_slot
       parent_name: ''
-      weight: 10
+      weight: 11
       format_type: fieldset
       format_settings:
         id: ''
@@ -76,15 +77,24 @@ content:
     type: string_textfield
     region: content
   field_tournament_description:
-    weight: 1
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
     region: content
+  field_tournament_edition:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   field_tournament_format:
-    weight: 7
+    weight: 8
     settings:
       rows: 5
       placeholder: ''
@@ -92,13 +102,13 @@ content:
     type: string_textarea
     region: content
   field_tournament_game:
-    weight: 4
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_tournament_image:
-    weight: 2
+    weight: 3
     settings:
       show_crop_area: true
       show_default_crop: true
@@ -116,7 +126,7 @@ content:
     type: image_widget_crop
     region: content
   field_tournament_planning:
-    weight: 6
+    weight: 7
     settings:
       rows: 5
       placeholder: ''
@@ -124,7 +134,7 @@ content:
     type: text_textarea
     region: content
   field_tournament_platform:
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -137,7 +147,7 @@ content:
     type: number
     region: content
   field_tournament_rules:
-    weight: 8
+    weight: 9
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
@@ -151,7 +161,7 @@ content:
     type: number
     region: content
   field_tournament_type:
-    weight: 3
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select

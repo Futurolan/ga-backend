@@ -12,10 +12,10 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: Solo
+      value: solo
       label: Solo
     -
-      value: Equipe
+      value: equipe
       label: Equipe
   allowed_values_function: ''
 module: options

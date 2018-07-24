@@ -1,18 +1,33 @@
-uuid: 3793bfd7-de06-46a5-ad12-c465e478eb2f
+uuid: 3aa884e7-b876-46df-9c27-dcc8a84240b6
 langcode: fr
 status: true
 dependencies:
   module:
     - node
+    - options
 id: node.field_game_pegi
 field_name: field_game_pegi
 entity_type: node
-type: string
+type: list_string
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
-module: core
+  allowed_values:
+    -
+      value: pegi_3
+      label: 'PEGI 3'
+    -
+      value: pegi_7
+      label: 'PEGI 7'
+    -
+      value: pegi_12
+      label: 'PEGI 12'
+    -
+      value: pegi_16
+      label: 'PEGI 16'
+    -
+      value: pegi_18
+      label: 'PEGI 18'
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: 1
 translatable: true

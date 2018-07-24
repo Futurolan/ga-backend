@@ -1,19 +1,21 @@
-uuid: 73b991a1-ce85-4a3e-9b25-00992e75e43f
+uuid: 4e43eb35-e482-4f94-8c7c-b284175c3491
 langcode: fr
 status: true
 dependencies:
   config:
     - field.storage.node.field_game_pegi
     - node.type.game
+  module:
+    - options
 id: node.game.field_game_pegi
 field_name: field_game_pegi
 entity_type: node
 bundle: game
 label: PEGI
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: list_string
