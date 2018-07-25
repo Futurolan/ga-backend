@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/janpoboril/drupal-composer-docker:7.1-apache
+FROM registry.gitlab.com/janpoboril/drupal-composer-docker:7.2-apache
 
 
 COPY src /var/www/drupal
