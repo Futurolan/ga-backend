@@ -1,5 +1,5 @@
-# ga-backend
-Backend of Gamer Assembly Website 
+# web-backend
+Backend of Futurolan Website
 
 ## Installation 
 
