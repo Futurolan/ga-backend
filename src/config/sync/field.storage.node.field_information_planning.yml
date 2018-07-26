@@ -1,0 +1,19 @@
+uuid: 4e8f6e9b-9dd7-4e78-b9cb-6b286265106a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_information_planning
+field_name: field_information_planning
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

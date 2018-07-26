@@ -1,0 +1,110 @@
+uuid: 4317602f-1b28-4500-9210-f418f9788a48
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.information.field_information_access
+    - field.field.node.information.field_information_accommodation
+    - field.field.node.information.field_information_catering
+    - field.field.node.information.field_information_description
+    - field.field.node.information.field_information_edition
+    - field.field.node.information.field_information_equipment
+    - field.field.node.information.field_information_gmap_place_id
+    - field.field.node.information.field_information_planning
+    - field.field.node.information.field_information_pricing
+    - node.type.information
+  module:
+    - text
+id: node.information.default
+targetEntityType: node
+bundle: information
+mode: default
+content:
+  field_information_access:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_information_accommodation:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_information_catering:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_information_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_information_edition:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_information_equipment:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_information_gmap_place_id:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_information_planning:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_information_pricing:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

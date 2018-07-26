@@ -3,46 +3,37 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.node.edition.field_edition_end_date
+    - field.field.node.edition.field_edition_start_date
+    - field.field.node.edition.field_edition_url
     - node.type.edition
+  module:
+    - datetime
 id: node.edition.default
 targetEntityType: node
 bundle: edition
 mode: default
 content:
-  created:
-    type: datetime_timestamp
-    weight: 4
-    region: content
+  field_edition_end_date:
+    weight: 2
     settings: {  }
     third_party_settings: {  }
-  langcode:
-    type: language_select
-    weight: 2
+    type: datetime_default
     region: content
-    settings:
-      include_locked: true
+  field_edition_start_date:
+    weight: 1
+    settings: {  }
     third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 5
+    type: datetime_default
     region: content
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
+  field_edition_url:
+    weight: 3
     settings:
-      display_label: true
-    weight: 7
-    region: content
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    settings:
-      display_label: true
-    weight: 6
+    type: string_textfield
     region: content
-    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -51,13 +42,10 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 3
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    region: content
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

@@ -1,0 +1,21 @@
+uuid: 43cbfa4c-ec96-4bb1-971e-be7fbc930409
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_information_access
+    - node.type.information
+  module:
+    - text
+id: node.information.field_information_access
+field_name: field_information_access
+entity_type: node
+bundle: information
+label: Accès
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

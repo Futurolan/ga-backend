@@ -1,0 +1,95 @@
+uuid: 88ed2cc4-8d24-4563-b11e-6319b7ed3c96
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.information.field_information_access
+    - field.field.node.information.field_information_accommodation
+    - field.field.node.information.field_information_catering
+    - field.field.node.information.field_information_description
+    - field.field.node.information.field_information_edition
+    - field.field.node.information.field_information_equipment
+    - field.field.node.information.field_information_gmap_place_id
+    - field.field.node.information.field_information_planning
+    - field.field.node.information.field_information_pricing
+    - node.type.information
+  module:
+    - text
+    - user
+id: node.information.default
+targetEntityType: node
+bundle: information
+mode: default
+content:
+  field_information_access:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_information_accommodation:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_information_catering:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_information_description:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_information_edition:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_information_equipment:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_information_gmap_place_id:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_information_planning:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_information_pricing:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

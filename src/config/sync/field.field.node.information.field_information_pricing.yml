@@ -1,0 +1,21 @@
+uuid: ed5a923e-9cff-4d58-8ef3-9ff603f86d92
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_information_pricing
+    - node.type.information
+  module:
+    - text
+id: node.information.field_information_pricing
+field_name: field_information_pricing
+entity_type: node
+bundle: information
+label: Tarif
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

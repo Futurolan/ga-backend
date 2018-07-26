@@ -1,0 +1,28 @@
+uuid: 6fafc344-71d0-4ba3-bac5-3bd440a6599f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_information_edition
+    - node.type.edition
+    - node.type.information
+id: node.information.field_information_edition
+field_name: field_information_edition
+entity_type: node
+bundle: information
+label: Edition
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      edition: edition
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 6d1ca1df-60d8-43dd-a3d5-fa6ee2305827
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_information_catering
+    - node.type.information
+  module:
+    - text
+id: node.information.field_information_catering
+field_name: field_information_catering
+entity_type: node
+bundle: information
+label: Restauration
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

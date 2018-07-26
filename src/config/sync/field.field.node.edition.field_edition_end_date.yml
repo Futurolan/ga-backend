@@ -1,0 +1,21 @@
+uuid: 0568e1ba-c4f4-4aef-903f-6ad0d8d78d4b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edition_end_date
+    - node.type.edition
+  module:
+    - datetime
+id: node.edition.field_edition_end_date
+field_name: field_edition_end_date
+entity_type: node
+bundle: edition
+label: 'Date de fin'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

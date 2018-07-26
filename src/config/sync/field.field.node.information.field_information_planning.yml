@@ -1,0 +1,21 @@
+uuid: a3b7a2e8-80e0-4878-ba7e-509b0ebc9031
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_information_planning
+    - node.type.information
+  module:
+    - text
+id: node.information.field_information_planning
+field_name: field_information_planning
+entity_type: node
+bundle: information
+label: Planning
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
