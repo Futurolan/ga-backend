@@ -1,0 +1,137 @@
+uuid: 359bb9f6-4c46-4d32-ae77-fb3b4958fe22
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.home_info.field_home_info_content_1
+    - field.field.node.home_info.field_home_info_content_2
+    - field.field.node.home_info.field_home_info_content_3
+    - field.field.node.home_info.field_home_info_edition
+    - field.field.node.home_info.field_home_info_title_1
+    - field.field.node.home_info.field_home_info_title_2
+    - field.field.node.home_info.field_home_info_title_3
+    - node.type.home_info
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_home_info_bloc_1:
+      children:
+        - field_home_info_title_1
+        - field_home_info_content_1
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Bloc 1'
+      region: content
+    group_home_info_bloc_2:
+      children:
+        - field_home_info_title_2
+        - field_home_info_content_2
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Bloc 2'
+      region: content
+    group_home_info_bloc_3:
+      children:
+        - field_home_info_title_3
+        - field_home_info_content_3
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Bloc 3'
+      region: content
+id: node.home_info.default
+targetEntityType: node
+bundle: home_info
+mode: default
+content:
+  field_home_info_content_1:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_home_info_content_2:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_home_info_content_3:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_home_info_edition:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_home_info_title_1:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_info_title_2:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_info_title_3:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

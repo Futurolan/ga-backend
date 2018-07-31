@@ -1,0 +1,21 @@
+uuid: ff0a1275-1a2d-4e39-930e-3717b9ce4485
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weezevent_data
+    - node.type.weezevent
+id: node.weezevent.field_weezevent_data
+field_name: field_weezevent_data
+entity_type: node
+bundle: weezevent
+label: data
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '{}'
+default_value_callback: ''
+settings: {  }
+field_type: string_long

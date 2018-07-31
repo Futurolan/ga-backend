@@ -1,0 +1,23 @@
+uuid: a58de847-5c3b-4b97-b9d5-915c28118c09
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edition_weezevent_active
+    - node.type.edition
+id: node.edition.field_edition_weezevent_active
+field_name: field_edition_weezevent_active
+entity_type: node
+bundle: edition
+label: 'Récupérer les données de weezevent'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

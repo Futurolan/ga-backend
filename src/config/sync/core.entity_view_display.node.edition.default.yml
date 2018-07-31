@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.edition.field_edition_end_date
     - field.field.node.edition.field_edition_start_date
     - field.field.node.edition.field_edition_url
+    - field.field.node.edition.field_edition_weezevent_active
+    - field.field.node.edition.field_edition_weezevent_event_id
     - node.type.edition
   module:
     - datetime
@@ -35,6 +37,24 @@ content:
     region: content
   field_edition_url:
     weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_edition_weezevent_active:
+    weight: 4
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_edition_weezevent_event_id:
+    weight: 5
     label: above
     settings:
       link_to_entity: false

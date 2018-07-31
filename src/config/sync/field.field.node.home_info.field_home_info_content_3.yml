@@ -1,0 +1,21 @@
+uuid: 27a80c4c-4808-48e4-97b8-f47b51f0f38c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_info_content_3
+    - node.type.home_info
+  module:
+    - text
+id: node.home_info.field_home_info_content_3
+field_name: field_home_info_content_3
+entity_type: node
+bundle: home_info
+label: 'Contenu bloc 3'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

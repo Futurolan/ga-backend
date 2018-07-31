@@ -17,3 +17,5 @@ services:
       MYSQL_DATABASE: drupal
     volumes:
       - ./db:/var/lib/mysql
+ker
+ker

@@ -1,0 +1,37 @@
+uuid: e32e2f7d-0f8e-4a82-958d-4228b52579cc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.weezevent.field_weezevent_data
+    - field.field.node.weezevent.field_weezevent_tournament
+    - node.type.weezevent
+  module:
+    - user
+id: node.weezevent.default
+targetEntityType: node
+bundle: weezevent
+mode: default
+content:
+  field_weezevent_data:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_weezevent_tournament:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -1,0 +1,22 @@
+uuid: 1a9eb897-e3ca-49d4-85bd-4c9af1d5fe31
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.weezevent
+id: node.weezevent.promote
+field_name: promote
+entity_type: node
+bundle: weezevent
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

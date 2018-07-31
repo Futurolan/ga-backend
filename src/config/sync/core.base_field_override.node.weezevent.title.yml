@@ -1,0 +1,18 @@
+uuid: a795c07e-4c3c-41ad-a10b-5f729be247ed
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.weezevent
+id: node.weezevent.title
+field_name: title
+entity_type: node
+bundle: weezevent
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

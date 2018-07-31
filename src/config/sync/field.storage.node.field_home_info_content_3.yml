@@ -1,0 +1,19 @@
+uuid: b9bf46a1-5d75-450d-afc3-4a0014a38d9a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_home_info_content_3
+field_name: field_home_info_content_3
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

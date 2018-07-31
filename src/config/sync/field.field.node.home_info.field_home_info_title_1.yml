@@ -1,0 +1,19 @@
+uuid: aeed2fad-0209-4b97-abc0-7375a9ccb5fe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_info_title_1
+    - node.type.home_info
+id: node.home_info.field_home_info_title_1
+field_name: field_home_info_title_1
+entity_type: node
+bundle: home_info
+label: 'Titre bloc 1'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

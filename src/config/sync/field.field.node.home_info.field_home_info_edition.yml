@@ -1,0 +1,28 @@
+uuid: 31606aab-8996-42a1-b9c3-4bc0b5208e8a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_info_edition
+    - node.type.edition
+    - node.type.home_info
+id: node.home_info.field_home_info_edition
+field_name: field_home_info_edition
+entity_type: node
+bundle: home_info
+label: Edition
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      edition: edition
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

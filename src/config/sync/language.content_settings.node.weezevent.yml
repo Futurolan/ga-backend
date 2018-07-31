@@ -1,0 +1,11 @@
+uuid: d4fc91c3-7b3b-42cc-ae60-f8260f20f8d7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.weezevent
+id: node.weezevent
+target_entity_type_id: node
+target_bundle: weezevent
+default_langcode: site_default
+language_alterable: false

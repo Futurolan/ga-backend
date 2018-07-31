@@ -1,0 +1,21 @@
+uuid: 704e85ac-7eae-44a0-aa44-4c21c55c4bcb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_info_content_2
+    - node.type.home_info
+  module:
+    - text
+id: node.home_info.field_home_info_content_2
+field_name: field_home_info_content_2
+entity_type: node
+bundle: home_info
+label: 'Contenu bloc 2'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

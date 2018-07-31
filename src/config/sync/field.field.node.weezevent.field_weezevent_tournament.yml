@@ -1,0 +1,28 @@
+uuid: f5fe5063-614b-4e6d-b952-36280e288e28
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weezevent_tournament
+    - node.type.tournament
+    - node.type.weezevent
+id: node.weezevent.field_weezevent_tournament
+field_name: field_weezevent_tournament
+entity_type: node
+bundle: weezevent
+label: Tournament
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      tournament: tournament
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

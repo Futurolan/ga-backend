@@ -1,0 +1,17 @@
+uuid: 1cc501f0-23bd-47dc-bafa-5f766a0f55cb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Informations de page d''accueil'
+type: home_info
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false
