@@ -3,7 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_tournament_edition
+    - field.storage.node.field_home_info_edition
     - node.type.home_info
     - user.role.moderator
   module:
@@ -194,10 +194,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        field_tournament_edition:
-          id: field_tournament_edition
-          table: node__field_tournament_edition
-          field: field_tournament_edition
+        field_home_info_edition:
+          id: field_home_info_edition
+          table: node__field_home_info_edition
+          field: field_home_info_edition
           relationship: none
           group_type: group
           admin_label: ''
@@ -516,7 +516,7 @@ display:
         - 'user.node_grants:view'
         - user.roles
       tags:
-        - 'config:field.storage.node.field_tournament_edition'
+        - 'config:field.storage.node.field_home_info_edition'
   page_1:
     display_plugin: page
     id: page_1
@@ -536,4 +536,4 @@ display:
         - 'user.node_grants:view'
         - user.roles
       tags:
-        - 'config:field.storage.node.field_tournament_edition'
+        - 'config:field.storage.node.field_home_info_edition'
