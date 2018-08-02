@@ -21,6 +21,7 @@ module:
   ga_partner_category_ref_filter: 0
   graphql: 0
   graphql_core: 0
+  graphql_weezevent: 0
   image: 0
   image_widget_crop: 0
   language: 0
