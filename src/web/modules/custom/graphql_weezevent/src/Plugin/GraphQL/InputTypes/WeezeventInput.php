@@ -9,17 +9,12 @@ use Drupal\graphql\Plugin\GraphQL\InputTypes\InputTypePluginBase;
  *   id = "weezevent_input",
  *   name = "WeezeventInput",
  *   fields = {
- *     "title" = "String",
- *     "data" = {
- *       "type" = "String",
- *       "nullable" = "TRUE"
- *     },
- *     "tournament" = {
- *       "type" = "Int",
- *       "nullable" = "TRUE"
- *     }
+ *     "token" = "String!",
+ *     "data" = "String!",
+ *     "tournament" = "Int!"
  *   }
  * )
  */
 class WeezeventInput extends InputTypePluginBase {
+
 }
