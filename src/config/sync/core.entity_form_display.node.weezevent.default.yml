@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.node.weezevent.field_weezevent_count
     - field.field.node.weezevent.field_weezevent_data
     - field.field.node.weezevent.field_weezevent_tournament
     - node.type.weezevent
@@ -10,21 +11,15 @@ id: node.weezevent.default
 targetEntityType: node
 bundle: weezevent
 mode: default
-content:
-  title:
-    type: string_textfield
-    weight: 0
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
+content: {  }
 hidden:
   created: true
+  field_weezevent_count: true
   field_weezevent_data: true
   field_weezevent_tournament: true
   langcode: true
   promote: true
   status: true
   sticky: true
+  title: true
   uid: true

@@ -1,0 +1,25 @@
+uuid: 456d29eb-b237-41ce-a22f-d58b51351883
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weezevent_count
+    - node.type.weezevent
+id: node.weezevent.field_weezevent_count
+field_name: field_weezevent_count
+entity_type: node
+bundle: weezevent
+label: Count
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

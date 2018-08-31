@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.node.weezevent.field_weezevent_count
     - field.field.node.weezevent.field_weezevent_data
     - field.field.node.weezevent.field_weezevent_tournament
     - node.type.weezevent
@@ -13,23 +14,32 @@ targetEntityType: node
 bundle: weezevent
 mode: default
 content:
+  field_weezevent_count:
+    type: number_integer
+    weight: 1
+    region: content
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
   field_weezevent_data:
+    type: basic_string
     weight: 2
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
-    region: content
   field_weezevent_tournament:
-    weight: 1
+    type: entity_reference_label
+    weight: 0
+    region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   links:
-    weight: 0
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }

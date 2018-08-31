@@ -1,0 +1,20 @@
+uuid: 5859f563-37c0-4bd9-a5f9-c11f13e37f56
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_weezevent_count
+field_name: field_weezevent_count
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
