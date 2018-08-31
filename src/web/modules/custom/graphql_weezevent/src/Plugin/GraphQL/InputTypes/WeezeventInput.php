@@ -11,6 +11,7 @@ use Drupal\graphql\Plugin\GraphQL\InputTypes\InputTypePluginBase;
  *   fields = {
  *     "token" = "String!",
  *     "data" = "String!",
+ *     "count" = "Int!",
  *     "tournament" = "Int!"
  *   }
  * )

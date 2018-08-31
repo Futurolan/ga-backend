@@ -33,7 +33,9 @@ class CreateWeezevent extends CreateEntityBase
         return [
             'title' => "Weezevent auto import for tournament " . $args['input']['tournament'],
             'field_weezevent_data' => $args['input']['data'],
-            'field_weezevent_tournament' => $args['input']['tournament']
+            'field_weezevent_tournament' => $args['input']['tournament'],
+            'field_weezevent_count' => $args['input']['count']
+
         ];
     }
 
