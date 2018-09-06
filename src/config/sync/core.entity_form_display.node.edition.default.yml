@@ -8,9 +8,28 @@ dependencies:
     - field.field.node.edition.field_edition_url
     - field.field.node.edition.field_edition_weezevent_active
     - field.field.node.edition.field_edition_weezevent_event_id
+    - field.field.node.edition.field_edition_weezevent_url
     - node.type.edition
   module:
     - datetime
+    - field_group
+third_party_settings:
+  field_group:
+    group_edition_weezevent:
+      children:
+        - field_edition_weezevent_active
+        - field_edition_weezevent_event_id
+        - field_edition_weezevent_url
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Weezevent
+      region: content
 id: node.edition.default
 targetEntityType: node
 bundle: edition
@@ -37,14 +56,22 @@ content:
     type: string_textfield
     region: content
   field_edition_weezevent_active:
-    weight: 26
+    weight: 5
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_edition_weezevent_event_id:
-    weight: 27
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_edition_weezevent_url:
+    weight: 7
     settings:
       size: 60
       placeholder: ''
