@@ -86,12 +86,9 @@ content:
     region: content
   field_tournament_edition:
     weight: 1
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_tournament_format:
     weight: 8

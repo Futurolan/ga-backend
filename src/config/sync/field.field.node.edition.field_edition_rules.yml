@@ -1,0 +1,27 @@
+uuid: 92cf0d87-6c30-4191-8804-e3b8d0a2d4c9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edition_rules
+    - node.type.edition
+  module:
+    - file
+id: node.edition.field_edition_rules
+field_name: field_edition_rules
+entity_type: node
+bundle: edition
+label: 'Règlement intérieur'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: edition
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

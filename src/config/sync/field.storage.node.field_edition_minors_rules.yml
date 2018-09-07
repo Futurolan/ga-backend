@@ -1,0 +1,23 @@
+uuid: f6b7ff4d-57e5-43b8-b7c0-580b2e4642b1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - file
+    - node
+id: node.field_edition_minors_rules
+field_name: field_edition_minors_rules
+entity_type: node
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
