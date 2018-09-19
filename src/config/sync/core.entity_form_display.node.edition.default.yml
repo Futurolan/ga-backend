@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.edition.field_edition_end_date
+    - field.field.node.edition.field_edition_image
     - field.field.node.edition.field_edition_minors_rules
+    - field.field.node.edition.field_edition_place
     - field.field.node.edition.field_edition_rules
     - field.field.node.edition.field_edition_start_date
     - field.field.node.edition.field_edition_url
@@ -16,6 +18,7 @@ dependencies:
     - datetime
     - field_group
     - file
+    - image
 third_party_settings:
   field_group:
     group_edition_weezevent:
@@ -47,16 +50,40 @@ third_party_settings:
         required_fields: true
       label: Règlements
       region: content
+    group_edition_info:
+      children:
+        - field_edition_image
+        - field_edition_place
+        - field_edition_start_date
+        - field_edition_end_date
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Informations
+      region: content
 id: node.edition.default
 targetEntityType: node
 bundle: edition
 mode: default
 content:
   field_edition_end_date:
-    weight: 2
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_edition_image:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   field_edition_minors_rules:
     weight: 7
@@ -64,6 +91,14 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    region: content
+  field_edition_place:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_edition_rules:
     weight: 6
@@ -73,13 +108,13 @@ content:
     type: file_generic
     region: content
   field_edition_start_date:
-    weight: 1
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_edition_url:
-    weight: 3
+    weight: 1
     settings:
       size: 60
       placeholder: ''

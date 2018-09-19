@@ -1,0 +1,19 @@
+uuid: 3b44b5bb-32ae-451e-ad50-090875422256
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edition_place
+    - node.type.edition
+id: node.edition.field_edition_place
+field_name: field_edition_place
+entity_type: node
+bundle: edition
+label: Lieu
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
