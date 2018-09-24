@@ -32,7 +32,7 @@ third_party_settings:
         - field_tournament_cashprize_title
         - field_tournament_cashprize_lines
       parent_name: ''
-      weight: 10
+      weight: 11
       format_type: fieldset
       format_settings:
         id: ''
@@ -44,10 +44,10 @@ third_party_settings:
     group_tournament_inscriptions:
       children:
         - field_tournament_weezevent_id
-        - field_tournament_size
+        - field_weezevent_team_size
         - field_tournament_reserved_slot
       parent_name: ''
-      weight: 11
+      weight: 12
       format_type: fieldset
       format_settings:
         id: ''
@@ -92,7 +92,7 @@ content:
     type: options_select
     region: content
   field_tournament_format:
-    weight: 8
+    weight: 9
     settings:
       rows: 5
       placeholder: ''
@@ -100,7 +100,7 @@ content:
     type: string_textarea
     region: content
   field_tournament_game:
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -124,7 +124,7 @@ content:
     type: image_widget_crop
     region: content
   field_tournament_planning:
-    weight: 7
+    weight: 8
     settings:
       rows: 5
       placeholder: ''
@@ -132,34 +132,34 @@ content:
     type: text_textarea
     region: content
   field_tournament_platform:
-    weight: 6
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_tournament_reserved_slot:
-    weight: 13
+    weight: 14
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_tournament_rules:
-    weight: 9
+    weight: 10
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
     region: content
   field_tournament_size:
-    weight: 12
+    weight: 4
     settings:
       placeholder: ''
     third_party_settings: {  }
     type: number
     region: content
   field_tournament_type:
-    weight: 4
+    weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -173,7 +173,7 @@ content:
     type: string_textfield
     region: content
   field_weezevent_team_size:
-    weight: 26
+    weight: 12
     settings:
       placeholder: ''
     third_party_settings: {  }
