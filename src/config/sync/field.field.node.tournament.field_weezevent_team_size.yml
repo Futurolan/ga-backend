@@ -1,0 +1,25 @@
+uuid: c6a51228-8058-4fc8-bb3c-64e742b42176
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weezevent_team_size
+    - node.type.tournament
+id: node.tournament.field_weezevent_team_size
+field_name: field_weezevent_team_size
+entity_type: node
+bundle: tournament
+label: 'Taille de l''équipe'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  min: 1
+  max: 99
+  prefix: ''
+  suffix: ''
+field_type: integer

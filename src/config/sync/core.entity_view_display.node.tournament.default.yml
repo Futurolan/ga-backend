@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.tournament.field_tournament_size
     - field.field.node.tournament.field_tournament_type
     - field.field.node.tournament.field_tournament_weezevent_id
+    - field.field.node.tournament.field_weezevent_team_size
     - field.field.node.tournament.field_weight
     - image.style.crop_5_1_1345x269
     - node.type.tournament
@@ -139,6 +140,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_weezevent_team_size:
+    weight: 15
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
     region: content
   links:
     weight: 0

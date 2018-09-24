@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.tournament.field_tournament_size
     - field.field.node.tournament.field_tournament_type
     - field.field.node.tournament.field_tournament_weezevent_id
+    - field.field.node.tournament.field_weezevent_team_size
     - field.field.node.tournament.field_weight
     - node.type.tournament
   module:
@@ -170,6 +171,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_weezevent_team_size:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
     region: content
   title:
     type: string_textfield

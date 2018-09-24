@@ -18,7 +18,7 @@ dependencies:
     - datetime
     - field_group
     - file
-    - image
+    - image_widget_crop
 third_party_settings:
   field_group:
     group_edition_weezevent:
@@ -80,10 +80,18 @@ content:
   field_edition_image:
     weight: 3
     settings:
+      show_crop_area: true
+      show_default_crop: true
+      warn_multiple_usages: true
+      preview_image_style: ''
+      crop_preview_image_style: crop_2_1_288x144
+      crop_list:
+        - crop_2_1
+      crop_types_required:
+        - crop_2_1
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
+    type: image_widget_crop
     region: content
   field_edition_minors_rules:
     weight: 7
