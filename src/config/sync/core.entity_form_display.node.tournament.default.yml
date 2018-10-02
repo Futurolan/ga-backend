@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.tournament.field_tournament_reserved_slot
     - field.field.node.tournament.field_tournament_rules
     - field.field.node.tournament.field_tournament_size
+    - field.field.node.tournament.field_tournament_toornament_id
     - field.field.node.tournament.field_tournament_type
     - field.field.node.tournament.field_tournament_weezevent_id
     - field.field.node.tournament.field_weezevent_team_size
@@ -55,6 +56,19 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Inscriptions
+      region: content
+    group_tournament_toornament:
+      children:
+        - field_tournament_toornament_id
+      parent_name: ''
+      weight: 13
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Toornament
       region: content
 id: node.tournament.default
 targetEntityType: node
@@ -157,6 +171,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: number
+    region: content
+  field_tournament_toornament_id:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_tournament_type:
     weight: 5
