@@ -27,4 +27,7 @@ permissions:
   - 'edit any partner content'
   - 'edit any partner_category content'
   - 'edit any tournament content'
+  - 'override news published option'
+  - 'schedule publishing of nodes'
   - 'view moderation in toolbar'
+  - 'view news unpublished content'
