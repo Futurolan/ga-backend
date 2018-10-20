@@ -1,0 +1,23 @@
+uuid: 153439a3-3dca-48a5-a9a9-45148747fcae
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edition_display_on_ga
+    - node.type.edition
+id: node.edition.field_edition_display_on_ga
+field_name: field_edition_display_on_ga
+entity_type: node
+bundle: edition
+label: 'Présent sur le site GA Events'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

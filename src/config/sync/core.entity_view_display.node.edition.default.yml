@@ -3,6 +3,8 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.node.edition.field_edition_display_on_futuro
+    - field.field.node.edition.field_edition_display_on_ga
     - field.field.node.edition.field_edition_end_date
     - field.field.node.edition.field_edition_image
     - field.field.node.edition.field_edition_minors_rules
@@ -25,6 +27,26 @@ targetEntityType: node
 bundle: edition
 mode: default
 content:
+  field_edition_display_on_futuro:
+    weight: 12
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_edition_display_on_ga:
+    weight: 11
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
   field_edition_end_date:
     weight: 4
     label: above

@@ -1,0 +1,23 @@
+uuid: 62921af3-16e6-4db4-bfc0-2cdc730f6809
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_edition_display_on_futuro
+    - node.type.edition
+id: node.edition.field_edition_display_on_futuro
+field_name: field_edition_display_on_futuro
+entity_type: node
+bundle: edition
+label: 'Présent sur le site Futurolan'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

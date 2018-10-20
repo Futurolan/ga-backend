@@ -3,6 +3,8 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.node.edition.field_edition_display_on_futuro
+    - field.field.node.edition.field_edition_display_on_ga
     - field.field.node.edition.field_edition_end_date
     - field.field.node.edition.field_edition_image
     - field.field.node.edition.field_edition_minors_rules
@@ -54,6 +56,8 @@ third_party_settings:
     group_edition_info:
       children:
         - field_edition_image
+        - field_edition_display_on_ga
+        - field_edition_display_on_futuro
         - field_edition_place
         - field_edition_start_date
         - field_edition_end_date
@@ -72,8 +76,22 @@ targetEntityType: node
 bundle: edition
 mode: default
 content:
+  field_edition_display_on_futuro:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_edition_display_on_ga:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_edition_end_date:
-    weight: 6
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
@@ -102,7 +120,7 @@ content:
     type: file_generic
     region: content
   field_edition_place:
-    weight: 4
+    weight: 6
     settings:
       size: 60
       placeholder: ''
@@ -117,7 +135,7 @@ content:
     type: file_generic
     region: content
   field_edition_start_date:
-    weight: 5
+    weight: 7
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
