@@ -7,6 +7,7 @@ module:
   ckeditor: 0
   config_readonly: 0
   config_readonly_menu_ui: 0
+  content_moderation: 0
   crop: 0
   datetime: 0
   dblog: 0
@@ -30,19 +31,18 @@ module:
   menu_ui: 0
   node: 0
   options: 0
-  override_node_options: 0
   page_cache: 0
-  scheduler: 0
+  scheduled_publish: 0
   smtp: 0
   system: 0
   text: 0
   toolbar: 0
   toolbar_menu: 0
-  unpublished_node_permissions: 0
   update: 0
   user: 0
   views_ui: 0
   weight: 0
+  workflows: 0
   menu_link_content: 1
   views: 10
   minimal: 1000

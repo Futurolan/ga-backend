@@ -7,9 +7,11 @@ dependencies:
     - field.field.node.news.field_news_description
     - field.field.node.news.field_news_editions
     - field.field.node.news.field_news_image
+    - field.field.node.news.field_news_publication_date
     - image.style.crop_5_1_1345x269
     - node.type.news
   module:
+    - datetime
     - image
     - text
     - user
@@ -18,6 +20,11 @@ targetEntityType: node
 bundle: news
 mode: default
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_news_content:
     weight: 4
     label: above
@@ -49,6 +56,15 @@ content:
       image_style: crop_5_1_1345x269
       image_link: ''
     third_party_settings: {  }
+  field_news_publication_date:
+    weight: 5
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
   links:
     weight: 0
     region: content

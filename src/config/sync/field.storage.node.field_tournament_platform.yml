@@ -23,6 +23,12 @@ settings:
     -
       value: xbox_one
       label: 'Xbox One'
+    -
+      value: phone
+      label: Mobile
+    -
+      value: ohter
+      label: Autre
   allowed_values_function: ''
 module: options
 locked: false

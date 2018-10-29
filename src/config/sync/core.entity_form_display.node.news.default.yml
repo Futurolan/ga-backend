@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.news.field_news_description
     - field.field.node.news.field_news_editions
     - field.field.node.news.field_news_image
+    - field.field.node.news.field_news_publication_date
     - node.type.news
   module:
+    - content_moderation
     - image_widget_crop
-    - scheduler
+    - scheduled_publish
     - text
 id: node.news.default
 targetEntityType: node
@@ -63,23 +65,28 @@ content:
         - crop_5_1
       progress_indicator: throbber
     third_party_settings: {  }
-  publish_on:
-    type: datetime_timestamp_no_default
+  field_news_publication_date:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: scheduled_publish
+    region: content
+  moderation_state:
+    type: moderation_state_default
     weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
+  publish_on:
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
   scheduler_settings:
     weight: 7
     region: content
     settings: {  }
-    third_party_settings: {  }
-  status:
-    type: boolean_checkbox
-    weight: 9
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -98,8 +105,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  unpublish_on:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
 hidden:
   langcode: true
   promote: true
+  status: true
   sticky: true
-  unpublish_on: true

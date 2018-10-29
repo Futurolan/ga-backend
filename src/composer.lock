@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7d4075b52bab3bbee2334b95c58e55c",
+    "content-hash": "c25708268cbf0d376a5209a1d9d2c452",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2747,21 +2747,21 @@
             }
         },
         {
-            "name": "drupal/override_node_options",
-            "version": "2.4.0",
+            "name": "drupal/scheduled_publish",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/override_node_options",
-                "reference": "8.x-2.4"
+                "url": "https://git.drupal.org/project/scheduled_publish",
+                "reference": "8.x-2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/override_node_options-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "0d00dbefc7f9103c863af2607a988bf68681df60"
+                "url": "https://ftp.drupal.org/files/projects/scheduled_publish-8.x-2.6.zip",
+                "reference": "8.x-2.6",
+                "shasum": "47052359af16a96d0398ac1b8940dd730749cf7e"
             },
             "require": {
-                "drupal/core": "^8.4.0"
+                "drupal/core": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -2769,97 +2769,41 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1522490884",
+                    "version": "8.x-2.6",
+                    "datestamp": "1539675784",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "Oliver Davies",
-                    "homepage": "https://www.drupal.org/user/381388",
-                    "email": "oliver@oliverdavies.uk"
+                    "name": "Peter Majmesku",
+                    "homepage": "https://www.drupal.org/user/786132"
+                },
+                {
+                    "name": "SaschaHannes",
+                    "homepage": "https://www.drupal.org/user/3536189"
+                },
+                {
+                    "name": "sergei_semipiadniy",
+                    "homepage": "https://www.drupal.org/user/2910879"
                 }
             ],
-            "description": "Allows permissions to be set on each node option such as published and authoring information.",
-            "homepage": "https://www.drupal.org/project/override_node_options",
+            "description": "A simple module for scheduled content moderation",
+            "homepage": "https://www.drupal.org/project/scheduled_publish",
             "support": {
-                "source": "http://cgit.drupalcode.org/override_node_options"
-            }
-        },
-        {
-            "name": "drupal/scheduler",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/scheduler",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/scheduler-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "213025b64b417f459b73d260d7287ca1f916d587"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "require-dev": {
-                "drupal/devel_generate": "*",
-                "drupal/rules": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1510690385",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Eric Schaefer (Eric Schaefer)",
-                    "homepage": "https://www.drupal.org/u/eric-schaefer",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Jonathan Smith (jonathan1055)",
-                    "homepage": "https://www.drupal.org/u/jonathan1055",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Pieter Frenssen (pfrenssen)",
-                    "homepage": "https://www.drupal.org/u/pfrenssen",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Rick Manelius (rickmanelius)",
-                    "homepage": "https://www.drupal.org/u/rickmanelius",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Automatically publish and unpublish content at specified dates and times.",
-            "homepage": "https://drupal.org/project/scheduler",
-            "support": {
-                "source": "http://cgit.drupalcode.org/scheduler",
-                "issues": "https://www.drupal.org/project/issues/scheduler"
+                "source": "http://cgit.drupalcode.org/scheduled_publish"
             }
         },
         {
@@ -2975,53 +2919,6 @@
             "homepage": "https://www.drupal.org/project/toolbar_menu",
             "support": {
                 "source": "http://cgit.drupalcode.org/toolbar_menu"
-            }
-        },
-        {
-            "name": "drupal/unpublished_node_permissions",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/unpublished_node_permissions",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/unpublished_node_permissions-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "da1fcbdb0a03185f8d0b5fca0082d1d1b33cb8f0"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1507274944",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "jeroen.b",
-                    "homepage": "https://www.drupal.org/user/1853532"
-                }
-            ],
-            "description": "Creates permisisons per node content type to control access to unpublished nodes per content type.",
-            "homepage": "https://www.drupal.org/project/unpublished_node_permissions",
-            "support": {
-                "source": "http://cgit.drupalcode.org/unpublished_node_permissions"
             }
         },
         {

@@ -201,6 +201,19 @@ content:
     third_party_settings: {  }
     type: number
     region: content
+  publish_on:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 14
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -209,11 +222,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  unpublish_on:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
 hidden:
   created: true
   field_weight: true
   langcode: true
   promote: true
-  status: true
   sticky: true
   uid: true
