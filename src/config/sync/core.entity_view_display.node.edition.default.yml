@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.edition.field_edition_display_on_ga
     - field.field.node.edition.field_edition_end_date
     - field.field.node.edition.field_edition_image
+    - field.field.node.edition.field_edition_live_mode_active
     - field.field.node.edition.field_edition_minors_rules
     - field.field.node.edition.field_edition_place
     - field.field.node.edition.field_edition_rules
@@ -64,6 +65,16 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_edition_live_mode_active:
+    weight: 13
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_edition_minors_rules:
     weight: 10

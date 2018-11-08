@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.edition.field_edition_display_on_ga
     - field.field.node.edition.field_edition_end_date
     - field.field.node.edition.field_edition_image
+    - field.field.node.edition.field_edition_live_mode_active
     - field.field.node.edition.field_edition_minors_rules
     - field.field.node.edition.field_edition_place
     - field.field.node.edition.field_edition_rules
@@ -17,6 +18,7 @@ dependencies:
     - field.field.node.edition.field_edition_weezevent_url
     - node.type.edition
   module:
+    - content_moderation
     - datetime
     - field_group
     - file
@@ -29,7 +31,7 @@ third_party_settings:
         - field_edition_weezevent_event_id
         - field_edition_weezevent_url
       parent_name: ''
-      weight: 4
+      weight: 3
       format_type: fieldset
       format_settings:
         id: ''
@@ -43,7 +45,7 @@ third_party_settings:
         - field_edition_rules
         - field_edition_minors_rules
       parent_name: ''
-      weight: 5
+      weight: 6
       format_type: fieldset
       format_settings:
         id: ''
@@ -69,6 +71,18 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Informations
+      region: content
+    group_edition_live:
+      children: {  }
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Live
       region: content
 id: node.edition.default
 targetEntityType: node
@@ -110,6 +124,13 @@ content:
       progress_indicator: throbber
     third_party_settings: {  }
     type: image_widget_crop
+    region: content
+  field_edition_live_mode_active:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_edition_minors_rules:
     weight: 7
@@ -170,6 +191,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 7
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   publish_on:
     weight: 31
     settings: {  }
