@@ -1,0 +1,23 @@
+uuid: bcdce1e8-b6ca-468a-a88a-71be7c0b7eb9
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_front
+    - paragraphs.paragraphs_type.stream_twitch
+id: paragraph.stream_twitch.field_display_front
+field_name: field_display_front
+entity_type: paragraph
+bundle: stream_twitch
+label: 'Permettre l''affichage en page d''accueil'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

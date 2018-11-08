@@ -1,0 +1,11 @@
+uuid: e026f9ef-9a34-4099-9893-8daf09632e7e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.streamslist
+id: node.streamslist
+target_entity_type_id: node
+target_bundle: streamslist
+default_langcode: site_default
+language_alterable: false

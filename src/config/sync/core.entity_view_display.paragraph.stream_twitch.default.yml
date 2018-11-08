@@ -1,0 +1,32 @@
+uuid: 4ad19e54-aad4-4f87-ba4c-b1adf27866ab
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stream_twitch.field_display_front
+    - field.field.paragraph.stream_twitch.field_stream_id
+    - paragraphs.paragraphs_type.stream_twitch
+id: paragraph.stream_twitch.default
+targetEntityType: paragraph
+bundle: stream_twitch
+mode: default
+content:
+  field_display_front:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_stream_id:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

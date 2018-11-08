@@ -1,0 +1,31 @@
+uuid: 6078222c-2229-4e0e-9e44-bf4038980f02
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_streamslist
+    - node.type.streamslist
+    - paragraphs.paragraphs_type.stream_twitch
+  module:
+    - entity_reference_revisions
+id: node.streamslist.field_streamslist
+field_name: field_streamslist
+entity_type: node
+bundle: streamslist
+label: 'Liste des streams'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      stream_twitch: stream_twitch
+    target_bundles_drag_drop:
+      stream_twitch:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

@@ -1,0 +1,18 @@
+uuid: e461a2d3-036b-433f-ac71-42d9f5427464
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_display_front
+field_name: field_display_front
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

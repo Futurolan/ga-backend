@@ -1,0 +1,17 @@
+uuid: 852c680f-98d6-4a53-934a-786887584fea
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: StreamsList
+type: streamslist
+description: 'La liste des streams pour un événement.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: true

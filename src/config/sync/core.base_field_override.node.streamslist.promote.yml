@@ -1,0 +1,22 @@
+uuid: 83b59ad5-acb6-4954-b09b-f1647fedbb8c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.streamslist
+id: node.streamslist.promote
+field_name: promote
+entity_type: node
+bundle: streamslist
+label: 'Promu en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

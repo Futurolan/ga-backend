@@ -1,0 +1,22 @@
+uuid: 0a866784-a6b1-4c02-8976-bd072cd248a3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.streamslist
+id: node.streamslist.status
+field_name: status
+entity_type: node
+bundle: streamslist
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

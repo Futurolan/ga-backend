@@ -1,0 +1,11 @@
+uuid: bad70ce7-b2b3-4a78-aff8-6ebce31e1cb3
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'file:file:8ad3093f-e60d-4ad7-807e-a4a816194476'
+id: stream_twitch
+label: 'Stream Twitch'
+icon_uuid: 8ad3093f-e60d-4ad7-807e-a4a816194476
+description: ''
+behavior_plugins: {  }
