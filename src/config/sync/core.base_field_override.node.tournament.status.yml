@@ -1,0 +1,22 @@
+uuid: c5d7c394-4db2-4f42-bc70-d5fe8850147c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.tournament
+id: node.tournament.status
+field_name: status
+entity_type: node
+bundle: tournament
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean
