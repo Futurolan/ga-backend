@@ -1,0 +1,22 @@
+uuid: d5c5df9e-f06b-43a8-b5c3-1d44f29ba16d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: tournoi
+label: Tournoi
+type: 'canonical_entities:node'
+pattern: '/tournois/[node:title]-[node:field_tournament_edition:entity:title]'
+selection_criteria:
+  d9bd90c8-eb8e-47c3-b034-489fdaae3195:
+    id: node_type
+    bundles:
+      tournament: tournament
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d9bd90c8-eb8e-47c3-b034-489fdaae3195
+selection_logic: and
+weight: -5
+relationships: {  }
