@@ -1,0 +1,28 @@
+<?php
+
+
+function graphql_weezevent_node_insert(\Drupal\node\NodeInterface $node)
+{
+
+    if($node->bundle() == 'weezevent'){
+        \Drupal::logger('graphql_weezevent')->notice('Clean old weezevent nodes');
+
+        $accountSwitcher = \Drupal::service('account_switcher');
+        $accountSwitcher->switchTo(new \Drupal\Core\Session\UserSession(['uid' => 1]));
+
+        $query = \Drupal::entityQuery('node');
+        $query->condition('type','weezevent');
+        $query->condition('field_weezevent_tournament', $node->field_weezevent_tournament->target_id);
+        $query->range(2,9999);
+        $query->sort('created','DESC');
+        $nids = $query->execute();
+
+
+        $storage_handler = \Drupal::entityTypeManager()->getStorage("node");
+        $nodes = $storage_handler->loadMultiple($nids);
+        $storage_handler->delete($nodes);
+        $accountSwitcher->switchBack();
+
+
+    }
+}
