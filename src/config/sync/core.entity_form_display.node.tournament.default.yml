@@ -22,6 +22,7 @@ dependencies:
     - field.field.node.tournament.field_weight
     - node.type.tournament
   module:
+    - content_moderation
     - field_group
     - file
     - image_widget_crop
@@ -201,6 +202,12 @@ content:
     third_party_settings: {  }
     type: number
     region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 15
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   publish_on:
     weight: 26
     settings: {  }
@@ -232,6 +239,7 @@ hidden:
   created: true
   field_weight: true
   langcode: true
+  path: true
   promote: true
   sticky: true
   uid: true

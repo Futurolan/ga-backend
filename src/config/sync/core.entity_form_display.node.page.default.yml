@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.page.field_page_note
     - node.type.page
   module:
+    - content_moderation
     - text
 id: node.page.default
 targetEntityType: node
@@ -38,6 +39,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 4
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -49,6 +56,7 @@ content:
 hidden:
   created: true
   langcode: true
+  path: true
   promote: true
   status: true
   sticky: true

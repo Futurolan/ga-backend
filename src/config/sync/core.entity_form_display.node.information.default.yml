@@ -14,6 +14,7 @@ dependencies:
     - field.field.node.information.field_information_pricing
     - node.type.information
   module:
+    - content_moderation
     - text
 id: node.information.default
 targetEntityType: node
@@ -90,6 +91,12 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 10
+    settings: {  }
+    region: content
+    third_party_settings: {  }
   title:
     type: string_textfield
     weight: 0
@@ -101,6 +108,7 @@ content:
 hidden:
   created: true
   langcode: true
+  path: true
   promote: true
   status: true
   sticky: true
