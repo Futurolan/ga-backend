@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.tournament.field_tournament_weezevent_id
     - field.field.node.tournament.field_weezevent_team_size
     - field.field.node.tournament.field_weight
+    - image.style.crop_preview
     - node.type.tournament
   module:
     - content_moderation
@@ -94,8 +95,8 @@ content:
   field_tournament_bg_sponsor:
     weight: 15
     settings:
+      preview_image_style: crop_preview
       progress_indicator: throbber
-      preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
     region: content
