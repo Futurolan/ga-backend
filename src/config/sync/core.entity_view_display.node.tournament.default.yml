@@ -3,6 +3,7 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.node.tournament.field_tournament_bg_sponsor
     - field.field.node.tournament.field_tournament_cashprize_lines
     - field.field.node.tournament.field_tournament_cashprize_title
     - field.field.node.tournament.field_tournament_description
@@ -33,6 +34,20 @@ targetEntityType: node
 bundle: tournament
 mode: default
 content:
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tournament_bg_sponsor:
+    weight: 17
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_tournament_cashprize_lines:
     weight: 10
     label: above
