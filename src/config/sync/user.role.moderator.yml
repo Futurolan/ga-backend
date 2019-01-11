@@ -37,6 +37,7 @@ permissions:
   - 'use news_workflow transition publish'
   - 'use publish_unpublish_workflow transition publish'
   - 'use publish_unpublish_workflow transition unpublish'
+  - 'use text format full_html'
   - 'view any unpublished content'
   - 'view moderation in toolbar'
   - 'view news unpublished content'

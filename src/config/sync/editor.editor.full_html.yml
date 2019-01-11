@@ -13,10 +13,15 @@ settings:
     rows:
       -
         -
+          name: Texte
+          items:
+            - Format
+        -
           name: Formats
           items:
             - Bold
             - Italic
+            - Underline
         -
           name: Liens
           items:
@@ -43,6 +48,10 @@ settings:
             - JustifyCenter
             - JustifyRight
             - JustifyBlock
+        -
+          name: Tableau
+          items:
+            - Table
   plugins:
     language:
       language_list: un
