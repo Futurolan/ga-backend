@@ -27,6 +27,9 @@ settings:
       value: phone
       label: Mobile
     -
+      value: switch
+      label: 'Nintendo Switch'
+    -
       value: ohter
       label: Autre
   allowed_values_function: ''
