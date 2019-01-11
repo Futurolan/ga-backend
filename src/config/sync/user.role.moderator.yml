@@ -30,6 +30,7 @@ permissions:
   - 'edit any partner_category content'
   - 'edit any streamslist content'
   - 'edit any tournament content'
+  - 'override news authored on option'
   - 'override news published option'
   - 'override tournament published option'
   - 'schedule publishing of nodes'
