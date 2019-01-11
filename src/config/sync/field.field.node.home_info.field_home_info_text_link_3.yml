@@ -1,0 +1,19 @@
+uuid: bfe36ad2-93d9-4b3b-b8ef-e6cc88fb141f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_home_info_text_link_3
+    - node.type.home_info
+id: node.home_info.field_home_info_text_link_3
+field_name: field_home_info_text_link_3
+entity_type: node
+bundle: home_info
+label: 'Texte du lien 3'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

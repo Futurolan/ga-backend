@@ -7,6 +7,12 @@ dependencies:
     - field.field.node.home_info.field_home_info_content_2
     - field.field.node.home_info.field_home_info_content_3
     - field.field.node.home_info.field_home_info_edition
+    - field.field.node.home_info.field_home_info_link_1
+    - field.field.node.home_info.field_home_info_link_2
+    - field.field.node.home_info.field_home_info_link_3
+    - field.field.node.home_info.field_home_info_text_link_1
+    - field.field.node.home_info.field_home_info_text_link_2
+    - field.field.node.home_info.field_home_info_text_link_3
     - field.field.node.home_info.field_home_info_title_1
     - field.field.node.home_info.field_home_info_title_2
     - field.field.node.home_info.field_home_info_title_3
@@ -21,6 +27,8 @@ third_party_settings:
       children:
         - field_home_info_title_1
         - field_home_info_content_1
+        - field_home_info_text_link_1
+        - field_home_info_link_1
       parent_name: ''
       weight: 2
       format_type: fieldset
@@ -35,6 +43,8 @@ third_party_settings:
       children:
         - field_home_info_title_2
         - field_home_info_content_2
+        - field_home_info_text_link_2
+        - field_home_info_link_2
       parent_name: ''
       weight: 3
       format_type: fieldset
@@ -49,6 +59,8 @@ third_party_settings:
       children:
         - field_home_info_title_3
         - field_home_info_content_3
+        - field_home_info_text_link_3
+        - field_home_info_link_3
       parent_name: ''
       weight: 4
       format_type: fieldset
@@ -93,6 +105,54 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_home_info_link_1:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_info_link_2:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_info_link_3:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_info_text_link_1:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_info_text_link_2:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_home_info_text_link_3:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_home_info_title_1:
     weight: 2

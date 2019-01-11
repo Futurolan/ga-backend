@@ -1,0 +1,21 @@
+uuid: 236cb421-6c3b-4e79-96de-3bced64e41b1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_home_info_link_2
+field_name: field_home_info_link_2
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
