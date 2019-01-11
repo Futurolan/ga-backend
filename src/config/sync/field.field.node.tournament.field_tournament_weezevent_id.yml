@@ -9,7 +9,7 @@ id: node.tournament.field_tournament_weezevent_id
 field_name: field_tournament_weezevent_id
 entity_type: node
 bundle: tournament
-label: 'Weezevent Id'
+label: 'Weezevent Ids'
 description: ''
 required: false
 translatable: false
