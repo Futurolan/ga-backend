@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.edition.field_edition_weezevent_active
     - field.field.node.edition.field_edition_weezevent_event_id
     - field.field.node.edition.field_edition_weezevent_url
+    - field.field.node.edition.field_edition_weezevent_url2
     - node.type.edition
   module:
     - content_moderation
@@ -30,22 +31,25 @@ third_party_settings:
         - field_edition_weezevent_active
         - field_edition_weezevent_event_id
         - field_edition_weezevent_url
+        - field_edition_weezevent_url2
+        - group_edition_rules
       parent_name: ''
       weight: 3
       format_type: fieldset
       format_settings:
-        id: ''
-        classes: ''
+        label: Billetterie
         description: ''
         required_fields: true
-      label: Weezevent
+        id: ''
+        classes: ''
+      label: Billetterie
       region: content
     group_edition_rules:
       children:
         - field_edition_rules
         - field_edition_minors_rules
-      parent_name: ''
-      weight: 5
+      parent_name: group_edition_weezevent
+      weight: 9
       format_type: fieldset
       format_settings:
         id: ''
@@ -186,6 +190,14 @@ content:
     region: content
   field_edition_weezevent_url:
     weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_edition_weezevent_url2:
+    weight: 8
     settings:
       size: 60
       placeholder: ''

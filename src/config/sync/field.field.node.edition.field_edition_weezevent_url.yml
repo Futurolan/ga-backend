@@ -9,8 +9,8 @@ id: node.edition.field_edition_weezevent_url
 field_name: field_edition_weezevent_url
 entity_type: node
 bundle: edition
-label: 'Url de la billeterie'
-description: "Si ce champ est rempli, alors la billeterie sera disponible sur le site avec l'url fournie.\r\nLaisser le champ vide pour désactiver la billeterie."
+label: 'Url de la billetterie'
+description: "Si ce champ est rempli, alors la billetterie sera disponible sur le site avec l'url fournie.\r\nLaisser le champ vide pour désactiver la billetterie."
 required: false
 translatable: false
 default_value: {  }

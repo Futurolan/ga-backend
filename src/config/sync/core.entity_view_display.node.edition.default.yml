@@ -16,6 +16,7 @@ dependencies:
     - field.field.node.edition.field_edition_weezevent_active
     - field.field.node.edition.field_edition_weezevent_event_id
     - field.field.node.edition.field_edition_weezevent_url
+    - field.field.node.edition.field_edition_weezevent_url2
     - image.style.crop_2_1_288x144
     - node.type.edition
   module:
@@ -137,6 +138,14 @@ content:
     region: content
   field_edition_weezevent_url:
     weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_edition_weezevent_url2:
+    weight: 14
     label: above
     settings:
       link_to_entity: false
