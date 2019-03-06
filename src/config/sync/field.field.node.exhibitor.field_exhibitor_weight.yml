@@ -1,0 +1,24 @@
+uuid: 2f37ca03-2ff6-4ec4-b6be-acdf1f3b7d0e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exhibitor_weight
+    - node.type.exhibitor
+  module:
+    - weight
+id: node.exhibitor.field_exhibitor_weight
+field_name: field_exhibitor_weight
+entity_type: node
+bundle: exhibitor
+label: Poids
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '0'
+default_value_callback: ''
+settings:
+  range: '20'
+field_type: weight

@@ -8,6 +8,7 @@ weight: 2
 is_admin: null
 permissions:
   - 'access toolbar'
+  - 'create exhibitor content'
   - 'create game content'
   - 'create home_info content'
   - 'create information content'
@@ -17,10 +18,12 @@ permissions:
   - 'create partner_category content'
   - 'create streamslist content'
   - 'create tournament content'
+  - 'delete any exhibitor content'
   - 'delete any streamslist content'
   - 'delete any tournament content'
   - 'delete own news content'
   - 'edit any edition content'
+  - 'edit any exhibitor content'
   - 'edit any game content'
   - 'edit any home_info content'
   - 'edit any information content'
@@ -30,6 +33,7 @@ permissions:
   - 'edit any partner_category content'
   - 'edit any streamslist content'
   - 'edit any tournament content'
+  - 'override exhibitor published option'
   - 'override news authored on option'
   - 'override news published option'
   - 'override tournament published option'

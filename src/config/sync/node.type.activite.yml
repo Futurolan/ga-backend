@@ -1,0 +1,17 @@
+uuid: cc8188f7-394c-4db1-8704-7b600e08bfda
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Activité
+type: activite
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

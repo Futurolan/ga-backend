@@ -1,0 +1,29 @@
+uuid: 26d51929-e818-44a4-a148-956f851f105f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_exhibitor_edition
+    - node.type.edition
+    - node.type.exhibitor
+id: node.exhibitor.field_exhibitor_edition
+field_name: field_exhibitor_edition
+entity_type: node
+bundle: exhibitor
+label: Edition
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      edition: edition
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

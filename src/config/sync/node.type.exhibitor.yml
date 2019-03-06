@@ -1,0 +1,17 @@
+uuid: deb796dc-f7fe-4a1b-99d4-6deabf5f1393
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Exposant
+type: exhibitor
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,15 @@
+uuid: 30be8f8c-0ecd-48c0-be52-e4601eed18f5
+langcode: fr
+status: true
+dependencies: {  }
+name: exhibitor_50x50
+label: 'Exhibitor 50x50'
+effects:
+  6d99fb7c-6c04-4f73-be80-9d019e55924f:
+    uuid: 6d99fb7c-6c04-4f73-be80-9d019e55924f
+    id: image_scale
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      upscale: true

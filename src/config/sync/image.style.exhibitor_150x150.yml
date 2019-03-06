@@ -1,0 +1,23 @@
+uuid: 718e8276-c8e5-4a3f-9ba6-078398a6e1ef
+langcode: fr
+status: true
+dependencies: {  }
+name: exhibitor_150x150
+label: 'Exhibitor - 150x150'
+effects:
+  367029c8-d46d-4c9e-9e63-fb37d7a937bf:
+    uuid: 367029c8-d46d-4c9e-9e63-fb37d7a937bf
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 150
+      upscale: false
+  9efc0317-788b-4b9a-97b7-700cfbb942c1:
+    uuid: 9efc0317-788b-4b9a-97b7-700cfbb942c1
+    id: image_crop
+    weight: 2
+    data:
+      width: 150
+      height: 150
+      anchor: center-center

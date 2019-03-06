@@ -1,0 +1,18 @@
+uuid: e5d1b0d7-9b6a-4826-a98a-0181dfa1ec08
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.exhibitor
+id: node.exhibitor.title
+field_name: title
+entity_type: node
+bundle: exhibitor
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,38 @@
+uuid: 949ffc9f-3b8e-49b6-a285-b8694d2020f3
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.activity_group.field_activity_group_edition
+    - node.type.activity_group
+id: node.activity_group.default
+targetEntityType: node
+bundle: activity_group
+mode: default
+content:
+  field_activity_group_edition:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  moderation_state: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

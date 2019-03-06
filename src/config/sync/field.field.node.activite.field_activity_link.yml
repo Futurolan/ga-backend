@@ -1,0 +1,19 @@
+uuid: 3979edf9-ec83-4471-b768-0b04dfdfbb54
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity_link
+    - node.type.activite
+id: node.activite.field_activity_link
+field_name: field_activity_link
+entity_type: node
+bundle: activite
+label: Lien
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

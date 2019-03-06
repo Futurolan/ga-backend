@@ -1,0 +1,21 @@
+uuid: 92d5f169-b85d-4979-ac2b-7588fb7efa65
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity_time
+    - node.type.activite
+  module:
+    - datetime_range
+id: node.activite.field_activity_time
+field_name: field_activity_time
+entity_type: node
+bundle: activite
+label: 'Date et heure'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

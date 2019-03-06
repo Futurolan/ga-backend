@@ -1,0 +1,11 @@
+uuid: 5704ab30-2daa-4ab9-92c3-95a7729b30ac
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.exhibitor
+id: node.exhibitor
+target_entity_type_id: node
+target_bundle: exhibitor
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,25 @@
+uuid: 895fbf88-2800-458d-b5b6-ad17a241cbfa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity_tournament
+    - node.type.activite
+id: node.activite.field_activity_tournament
+field_name: field_activity_tournament
+entity_type: node
+bundle: activite
+label: Tournoi
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: tournament_ref_filter
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference
