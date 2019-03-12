@@ -1,0 +1,56 @@
+uuid: c271a4c7-4c98-4515-a1e1-a30b27010b98
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.family.field_family_activity_groups
+    - field.field.node.family.field_family_edition
+    - node.type.family
+  module:
+    - paragraphs
+id: node.family.default
+targetEntityType: node
+bundle: family
+mode: default
+content:
+  field_family_activity_groups:
+    type: entity_reference_paragraphs
+    weight: 2
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_family_edition:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  moderation_state: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

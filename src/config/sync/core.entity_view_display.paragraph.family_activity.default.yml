@@ -1,0 +1,42 @@
+uuid: 59d3d694-ca5b-42f6-950a-9af82d79e85f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.family_activity.field_family_activity_image
+    - field.field.paragraph.family_activity.field_family_activity_title
+    - field.field.paragraph.family_activity.field_family_activity_url
+    - paragraphs.paragraphs_type.family_activity
+  module:
+    - image
+id: paragraph.family_activity.default
+targetEntityType: paragraph
+bundle: family_activity
+mode: default
+content:
+  field_family_activity_image:
+    weight: 2
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_family_activity_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_family_activity_url:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

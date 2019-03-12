@@ -1,0 +1,37 @@
+uuid: 87a3135e-fd94-402e-9b2d-22c2234788a0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_family_activity_group_acti
+    - paragraphs.paragraphs_type.family_activity
+    - paragraphs.paragraphs_type.family_activity_group
+  module:
+    - entity_reference_revisions
+id: paragraph.family_activity_group.field_family_activity_group_acti
+field_name: field_family_activity_group_acti
+entity_type: paragraph
+bundle: family_activity_group
+label: Activités
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      family_activity: family_activity
+    target_bundles_drag_drop:
+      family_activity_group:
+        weight: 4
+        enabled: false
+      family_activity:
+        enabled: true
+        weight: 5
+      stream_twitch:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

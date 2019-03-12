@@ -1,0 +1,37 @@
+uuid: 88bef149-55b7-4052-b70c-930c2cd04522
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_family_activity_groups
+    - node.type.family
+    - paragraphs.paragraphs_type.family_activity_group
+  module:
+    - entity_reference_revisions
+id: node.family.field_family_activity_groups
+field_name: field_family_activity_groups
+entity_type: node
+bundle: family
+label: 'Groupes d''activités'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      family_activity_group: family_activity_group
+    target_bundles_drag_drop:
+      family_activity:
+        weight: 4
+        enabled: false
+      family_activity_group:
+        enabled: true
+        weight: 5
+      stream_twitch:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

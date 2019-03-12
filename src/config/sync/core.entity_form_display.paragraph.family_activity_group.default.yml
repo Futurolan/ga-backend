@@ -1,0 +1,39 @@
+uuid: c4e30259-f133-44c8-bb06-f2f2b70c4046
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.family_activity_group.field_family_activity_group_acti
+    - field.field.paragraph.family_activity_group.field_family_activity_group_name
+    - paragraphs.paragraphs_type.family_activity_group
+  module:
+    - paragraphs
+id: paragraph.family_activity_group.default
+targetEntityType: paragraph
+bundle: family_activity_group
+mode: default
+content:
+  field_family_activity_group_acti:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_family_activity_group_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

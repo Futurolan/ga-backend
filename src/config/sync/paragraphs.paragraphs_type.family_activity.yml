@@ -1,0 +1,9 @@
+uuid: e678e4b6-089e-49df-b8a0-7afd080ba0db
+langcode: fr
+status: true
+dependencies: {  }
+id: family_activity
+label: Activité
+icon_uuid: null
+description: 'Activité de la page famille'
+behavior_plugins: {  }

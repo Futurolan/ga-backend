@@ -1,0 +1,19 @@
+uuid: 1a906b64-d187-4664-9312-81eb1abd15c8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_family_activity_url
+    - paragraphs.paragraphs_type.family_activity
+id: paragraph.family_activity.field_family_activity_url
+field_name: field_family_activity_url
+entity_type: paragraph
+bundle: family_activity
+label: Url
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,15 +1,15 @@
-uuid: bf97e71a-0592-4acd-baba-deac6bc3066d
+uuid: e818874c-ee05-4192-9e8e-a8e9abd8f234
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_streamslist_edition
+    - field.storage.node.field_family_edition
     - node.type.edition
-    - node.type.streamslist
-id: node.streamslist.field_streamslist_edition
-field_name: field_streamslist_edition
+    - node.type.family
+id: node.family.field_family_edition
+field_name: field_family_edition
 entity_type: node
-bundle: streamslist
+bundle: family
 label: Edition
 description: ''
 required: true

@@ -1,0 +1,9 @@
+uuid: 878562e1-c72d-46f3-bb64-bd7bca11e70e
+langcode: fr
+status: true
+dependencies: {  }
+id: family_activity_group
+label: 'Groupe d''activités'
+icon_uuid: null
+description: 'Groupe d''activités de la page famille'
+behavior_plugins: {  }

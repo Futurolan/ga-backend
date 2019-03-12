@@ -1,0 +1,22 @@
+uuid: 628765dd-8b3d-4e61-b8da-931b244d7062
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.family
+id: node.family.status
+field_name: status
+entity_type: node
+bundle: family
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

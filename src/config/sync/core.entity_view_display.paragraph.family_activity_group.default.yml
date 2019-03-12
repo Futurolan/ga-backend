@@ -1,0 +1,33 @@
+uuid: 8ade5ae9-2daf-4af5-9fd0-e442f7778498
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.family_activity_group.field_family_activity_group_acti
+    - field.field.paragraph.family_activity_group.field_family_activity_group_name
+    - paragraphs.paragraphs_type.family_activity_group
+  module:
+    - entity_reference_revisions
+id: paragraph.family_activity_group.default
+targetEntityType: paragraph
+bundle: family_activity_group
+mode: default
+content:
+  field_family_activity_group_acti:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_family_activity_group_name:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

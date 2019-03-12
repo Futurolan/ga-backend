@@ -1,0 +1,23 @@
+uuid: 775dc3a2-ec86-4673-8190-205ac3670e4e
+langcode: fr
+status: true
+dependencies: {  }
+name: family_150x150
+label: 'Family - 150x150'
+effects:
+  ad807dc5-2401-4efc-8565-b962519bf197:
+    uuid: ad807dc5-2401-4efc-8565-b962519bf197
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 150
+      upscale: true
+  cd67c321-e428-4171-ac4e-f8fe28f9f730:
+    uuid: cd67c321-e428-4171-ac4e-f8fe28f9f730
+    id: image_crop
+    weight: 2
+    data:
+      width: 150
+      height: 150
+      anchor: center-center
