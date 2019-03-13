@@ -1,0 +1,18 @@
+uuid: 8032a6ed-046b-4fa1-9dd2-483a54458261
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.influencer
+id: node.influencer.title
+field_name: title
+entity_type: node
+bundle: influencer
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

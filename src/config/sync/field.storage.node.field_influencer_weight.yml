@@ -1,0 +1,20 @@
+uuid: 09e3312a-f2ff-4cb6-8a32-49649d781540
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - weight
+id: node.field_influencer_weight
+field_name: field_influencer_weight
+entity_type: node
+type: weight
+settings:
+  unsigned: false
+module: weight
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,68 @@
+uuid: 9d36f4a1-1e3d-4a4c-b160-580b2df4c375
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.influencer.field_influencer_description
+    - field.field.node.influencer.field_influencer_edition
+    - field.field.node.influencer.field_influencer_image
+    - field.field.node.influencer.field_influencer_url
+    - field.field.node.influencer.field_influencer_weight
+    - node.type.influencer
+  module:
+    - image
+    - text
+    - user
+id: node.influencer.default
+targetEntityType: node
+bundle: influencer
+mode: default
+content:
+  field_influencer_description:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_influencer_edition:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_influencer_image:
+    weight: 104
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_influencer_url:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_influencer_weight:
+    weight: 103
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

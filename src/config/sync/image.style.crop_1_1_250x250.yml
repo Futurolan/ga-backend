@@ -1,0 +1,24 @@
+uuid: bab70ef6-97cc-4661-b96e-ca1134432cf6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.crop_1_1
+  module:
+    - crop
+name: crop_1_1_250x250
+label: 'Crop 1:1 - 250x250'
+effects:
+  fb609c86-3bee-42fe-b3b8-cb382e7db4d9:
+    uuid: fb609c86-3bee-42fe-b3b8-cb382e7db4d9
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_1_1
+  cefcc144-569c-4dee-8e7b-9feadf946e0a:
+    uuid: cefcc144-569c-4dee-8e7b-9feadf946e0a
+    id: image_resize
+    weight: 2
+    data:
+      width: 250
+      height: 250

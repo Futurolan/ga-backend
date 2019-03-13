@@ -1,0 +1,24 @@
+uuid: ef20d38c-e72f-4038-9bfd-d1583699a827
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.crop_1_1
+  module:
+    - crop
+name: crop_1_1_200x200
+label: 'Crop 1:1 - 200x200'
+effects:
+  ff05f2b3-beb7-47a4-8fee-687f6f04c18c:
+    uuid: ff05f2b3-beb7-47a4-8fee-687f6f04c18c
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_1_1
+  c0784421-c9ce-4fab-bed9-f6e32605b795:
+    uuid: c0784421-c9ce-4fab-bed9-f6e32605b795
+    id: image_resize
+    weight: 2
+    data:
+      width: 200
+      height: 200

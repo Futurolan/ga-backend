@@ -1,0 +1,24 @@
+uuid: 019cb6a3-6611-4784-b0c2-934e090a5845
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.crop_1_1
+  module:
+    - crop
+name: crop_1_1_705x705
+label: 'Crop 1:1 - 705x705'
+effects:
+  5bdce505-88ca-4e1f-a181-e6e1e0e66f22:
+    uuid: 5bdce505-88ca-4e1f-a181-e6e1e0e66f22
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_1_1
+  9d0ef1c4-e53b-4d3f-9114-4864fe54ce1e:
+    uuid: 9d0ef1c4-e53b-4d3f-9114-4864fe54ce1e
+    id: image_resize
+    weight: 2
+    data:
+      width: 705
+      height: 705

@@ -1,0 +1,11 @@
+uuid: b58394c2-3bab-4697-b708-fce2e175781a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.influencer
+id: node.influencer
+target_entity_type_id: node
+target_bundle: influencer
+default_langcode: site_default
+language_alterable: false

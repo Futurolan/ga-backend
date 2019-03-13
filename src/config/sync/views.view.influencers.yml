@@ -1,20 +1,18 @@
-uuid: aa1586d3-fd3f-465a-a93f-88915f3d58f0
+uuid: 30a41ed5-e86f-43d5-9885-69df2c6352be
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_exhibitor_image
-    - image.style.exhibitor_50x50
-    - node.type.exhibitor
+    - field.storage.node.field_influencer_edition
+    - node.type.influencer
     - user.role.moderator
   module:
     - ga_editions_ref_filter
-    - image
     - node
     - user
     - weight
-id: exhibitors
-label: Exposants
+id: influencers
+label: Influenceurs
 module: views
 description: ''
 tag: ''
@@ -150,70 +148,6 @@ display:
       row:
         type: fields
       fields:
-        field_exhibitor_image:
-          id: field_exhibitor_image
-          table: node__field_exhibitor_image
-          field: field_exhibitor_image
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Image
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: image
-          settings:
-            image_style: exhibitor_50x50
-            image_link: ''
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -261,6 +195,69 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_influencer_edition:
+          id: field_influencer_edition
+          table: node__field_influencer_edition
+          field: field_influencer_edition
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: Edition
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         status:
           id: status
           table: node_field_data
@@ -379,14 +376,14 @@ display:
           destination: true
           entity_type: node
           plugin_id: entity_operations
-        field_exhibitor_weight:
-          id: field_exhibitor_weight
-          table: node__field_exhibitor_weight
-          field: field_exhibitor_weight
+        field_influencer_weight:
+          id: field_influencer_weight
+          table: node__field_influencer_weight
+          field: field_influencer_weight
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Poids Selector (field_exhibitor_weight)'
+          label: 'Poids Selector (field_influencer_weight)'
           exclude: false
           alter:
             alter_text: false
@@ -439,7 +436,7 @@ display:
           admin_label: ''
           operator: in
           value:
-            exhibitor: exhibitor
+            influencer: influencer
           group: 1
           exposed: false
           expose:
@@ -474,7 +471,7 @@ display:
           id: related_content_titles
           table: node_field_data
           field: related_content_titles
-          relationship: field_exhibitor_edition
+          relationship: field_influencer_edition
           group_type: group
           admin_label: ''
           operator: or
@@ -513,10 +510,10 @@ display:
           entity_type: node
           plugin_id: ga_editions_ref_filter_related_content_titles
       sorts:
-        field_exhibitor_weight_value:
-          id: field_exhibitor_weight_value
-          table: node__field_exhibitor_weight
-          field: field_exhibitor_weight_value
+        field_influencer_weight_value:
+          id: field_influencer_weight_value
+          table: node__field_influencer_weight
+          field: field_influencer_weight_value
           relationship: none
           group_type: group
           admin_label: ''
@@ -525,7 +522,7 @@ display:
           expose:
             label: ''
           plugin_id: standard
-      title: Exposants
+      title: Influenceurs
       header:
         area_text_custom:
           id: area_text_custom
@@ -536,18 +533,18 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: "<ul class=\"action-links\">\r\n  <li>\r\n    <a class=\"button button-action button--primary button--small\" href=\"/node/add/exhibitor?destination=/gadmin/exhibitors\">Ajouter un exposant</a>\r\n  </li>\r\n</ul>"
+          content: "<ul class=\"action-links\">\r\n  <li>\r\n    <a class=\"button button-action button--primary button--small\" href=\"/node/add/influencer?destination=/gadmin/influencers\">Ajouter un influenceur</a>\r\n  </li>\r\n</ul>"
           plugin_id: text_custom
       footer: {  }
       empty: {  }
       relationships:
-        field_exhibitor_edition:
-          id: field_exhibitor_edition
-          table: node__field_exhibitor_edition
-          field: field_exhibitor_edition
+        field_influencer_edition:
+          id: field_influencer_edition
+          table: node__field_influencer_edition
+          field: field_influencer_edition
           relationship: none
           group_type: group
-          admin_label: 'field_exhibitor_edition : Content'
+          admin_label: 'field_influencer_edition : Content'
           required: false
           plugin_id: standard
       arguments: {  }
@@ -567,7 +564,7 @@ display:
         - 'user.node_grants:view'
         - user.roles
       tags:
-        - 'config:field.storage.node.field_exhibitor_image'
+        - 'config:field.storage.node.field_influencer_edition'
   page_1:
     display_plugin: page
     id: page_1
@@ -575,7 +572,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: gadmin/exhibitors
+      path: gadmin/influencers
       display_description: ''
     cache_metadata:
       max-age: -1
@@ -587,4 +584,4 @@ display:
         - 'user.node_grants:view'
         - user.roles
       tags:
-        - 'config:field.storage.node.field_exhibitor_image'
+        - 'config:field.storage.node.field_influencer_edition'

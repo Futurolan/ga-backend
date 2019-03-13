@@ -1,0 +1,24 @@
+uuid: c3dd16bb-436e-407b-8a46-b60e65a0a725
+langcode: fr
+status: true
+dependencies:
+  config:
+    - crop.type.crop_1_1
+  module:
+    - crop
+name: crop_1_1_300x300
+label: 'Crop 1:1 - 300x300'
+effects:
+  61fa978c-d3ec-4c74-aa9a-5d7c9caa3056:
+    uuid: 61fa978c-d3ec-4c74-aa9a-5d7c9caa3056
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: crop_1_1
+  49d09dc8-3d49-40ce-95e8-cc8f31476a2f:
+    uuid: 49d09dc8-3d49-40ce-95e8-cc8f31476a2f
+    id: image_resize
+    weight: 2
+    data:
+      width: 300
+      height: 300

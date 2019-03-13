@@ -1,0 +1,21 @@
+uuid: fcdb3c18-006f-4144-a17d-e6e8f8fd0714
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_influencer_description
+    - node.type.influencer
+  module:
+    - text
+id: node.influencer.field_influencer_description
+field_name: field_influencer_description
+entity_type: node
+bundle: influencer
+label: Description
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
