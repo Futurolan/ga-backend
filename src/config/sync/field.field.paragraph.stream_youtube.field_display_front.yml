@@ -1,0 +1,23 @@
+uuid: fa7b9eca-6279-4f68-bcf4-6f25c48932d8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_display_front
+    - paragraphs.paragraphs_type.stream_youtube
+id: paragraph.stream_youtube.field_display_front
+field_name: field_display_front
+entity_type: paragraph
+bundle: stream_youtube
+label: 'Permettre l''affichage en page d''accueil'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

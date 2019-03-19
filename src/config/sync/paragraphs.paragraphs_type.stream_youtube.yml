@@ -1,0 +1,9 @@
+uuid: 3cf9d26f-c770-4d0a-91c7-4087a166c7a2
+langcode: fr
+status: true
+dependencies: {  }
+id: stream_youtube
+label: 'Stream Youtube'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

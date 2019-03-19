@@ -1,0 +1,32 @@
+uuid: 93cc8fe7-e892-40ea-b0f2-3eebbb23c01e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.stream_youtube.field_display_front
+    - field.field.paragraph.stream_youtube.field_stream_id
+    - paragraphs.paragraphs_type.stream_youtube
+id: paragraph.stream_youtube.default
+targetEntityType: paragraph
+bundle: stream_youtube
+mode: default
+content:
+  field_display_front:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_stream_id:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,19 @@
+uuid: cfb9889a-39da-4183-8825-625f4a401d33
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_stream_id
+    - paragraphs.paragraphs_type.stream_youtube
+id: paragraph.stream_youtube.field_stream_id
+field_name: field_stream_id
+entity_type: paragraph
+bundle: stream_youtube
+label: 'ID du stream'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

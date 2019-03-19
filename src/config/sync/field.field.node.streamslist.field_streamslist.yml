@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_streamslist
     - node.type.streamslist
     - paragraphs.paragraphs_type.stream_twitch
+    - paragraphs.paragraphs_type.stream_youtube
   module:
     - entity_reference_revisions
 id: node.streamslist.field_streamslist
@@ -24,8 +25,18 @@ settings:
     negate: 0
     target_bundles:
       stream_twitch: stream_twitch
+      stream_youtube: stream_youtube
     target_bundles_drag_drop:
       stream_twitch:
         enabled: true
         weight: 2
+      stream_youtube:
+        enabled: true
+        weight: 5
+      family_activity:
+        weight: 6
+        enabled: false
+      family_activity_group:
+        weight: 7
+        enabled: false
 field_type: entity_reference_revisions
