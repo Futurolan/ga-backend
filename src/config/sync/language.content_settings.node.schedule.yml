@@ -1,0 +1,11 @@
+uuid: 1ad1f945-c77e-4a7a-8308-1dad7f92fedc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.schedule
+id: node.schedule
+target_entity_type_id: node
+target_bundle: schedule
+default_langcode: site_default
+language_alterable: false

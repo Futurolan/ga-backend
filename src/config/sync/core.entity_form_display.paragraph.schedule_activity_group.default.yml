@@ -1,0 +1,45 @@
+uuid: b9fb01fd-ce63-40a2-a15b-0d8e66ebf68c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.schedule_activity_group.field_schedule_activity_group_ac
+    - field.field.paragraph.schedule_activity_group.field_schedule_activity_group_na
+    - paragraphs.paragraphs_type.schedule_activity_group
+  module:
+    - paragraphs
+id: paragraph.schedule_activity_group.default
+targetEntityType: paragraph
+bundle: schedule_activity_group
+mode: default
+content:
+  field_schedule_activity_group_ac:
+    type: paragraphs
+    weight: 1
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: schedule_activity
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+    third_party_settings: {  }
+    region: content
+  field_schedule_activity_group_na:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

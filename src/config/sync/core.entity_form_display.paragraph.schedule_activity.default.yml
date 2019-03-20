@@ -1,0 +1,59 @@
+uuid: e34c546e-95fa-477a-9f4e-ffa7845452b8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.schedule_activity.field_schedule_activity_date
+    - field.field.paragraph.schedule_activity.field_schedule_activity_descript
+    - field.field.paragraph.schedule_activity.field_schedule_activity_game
+    - field.field.paragraph.schedule_activity.field_schedule_activity_link
+    - field.field.paragraph.schedule_activity.field_schedule_activity_title
+    - paragraphs.paragraphs_type.schedule_activity
+  module:
+    - datetime_range
+    - text
+id: paragraph.schedule_activity.default
+targetEntityType: paragraph
+bundle: schedule_activity
+mode: default
+content:
+  field_schedule_activity_date:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_schedule_activity_descript:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_schedule_activity_game:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_schedule_activity_link:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_schedule_activity_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

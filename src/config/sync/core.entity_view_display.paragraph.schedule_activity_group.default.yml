@@ -1,0 +1,33 @@
+uuid: 1d070d89-d587-45a1-9649-42736eb66cdb
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.schedule_activity_group.field_schedule_activity_group_ac
+    - field.field.paragraph.schedule_activity_group.field_schedule_activity_group_na
+    - paragraphs.paragraphs_type.schedule_activity_group
+  module:
+    - entity_reference_revisions
+id: paragraph.schedule_activity_group.default
+targetEntityType: paragraph
+bundle: schedule_activity_group
+mode: default
+content:
+  field_schedule_activity_group_ac:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_schedule_activity_group_na:
+    weight: 0
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,46 @@
+uuid: 33c00192-5e74-47ec-b71c-a4e3f0db4d05
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_schedule_activity_group
+    - node.type.schedule
+    - paragraphs.paragraphs_type.schedule_activity_group
+  module:
+    - entity_reference_revisions
+id: node.schedule.field_schedule_activity_group
+field_name: field_schedule_activity_group
+entity_type: node
+bundle: schedule
+label: Scènes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      schedule_activity_group: schedule_activity_group
+    target_bundles_drag_drop:
+      schedule_activity:
+        weight: 7
+        enabled: false
+      family_activity:
+        weight: 8
+        enabled: false
+      family_activity_group:
+        weight: 9
+        enabled: false
+      schedule_activity_group:
+        enabled: true
+        weight: 10
+      stream_twitch:
+        weight: 11
+        enabled: false
+      stream_youtube:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

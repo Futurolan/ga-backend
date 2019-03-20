@@ -1,0 +1,59 @@
+uuid: d7dd85e3-6e0e-40a3-a4b6-b65276311541
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.schedule.field_schedule_activity_group
+    - field.field.node.schedule.field_schedule_edition
+    - node.type.schedule
+  module:
+    - paragraphs
+id: node.schedule.default
+targetEntityType: node
+bundle: schedule
+mode: default
+content:
+  field_schedule_activity_group:
+    type: paragraphs
+    weight: 2
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: preview
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: schedule_activity_group
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+    third_party_settings: {  }
+    region: content
+  field_schedule_edition:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  moderation_state: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

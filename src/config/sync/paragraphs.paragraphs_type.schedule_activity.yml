@@ -1,0 +1,9 @@
+uuid: caf88132-a926-4004-b731-649b96f98723
+langcode: fr
+status: true
+dependencies: {  }
+id: schedule_activity
+label: Activité
+icon_uuid: null
+description: 'Activité de la page programme'
+behavior_plugins: {  }

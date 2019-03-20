@@ -1,0 +1,9 @@
+uuid: 725bb924-af36-46d2-a841-9fc85460f50a
+langcode: fr
+status: true
+dependencies: {  }
+id: schedule_activity_group
+label: Scène
+icon_uuid: null
+description: "Groupe d'activités de la page programme\t\r\n"
+behavior_plugins: {  }

@@ -1,0 +1,38 @@
+uuid: aa0cdc09-7b0a-43a0-9d6a-41256494f474
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.schedule.field_schedule_activity_group
+    - field.field.node.schedule.field_schedule_edition
+    - node.type.schedule
+  module:
+    - paragraphs
+    - user
+id: node.schedule.default
+targetEntityType: node
+bundle: schedule
+mode: default
+content:
+  field_schedule_activity_group:
+    type: paragraph_summary
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_schedule_edition:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

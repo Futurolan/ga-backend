@@ -1,0 +1,19 @@
+uuid: 452e53eb-47ba-4550-a6a5-d150346eebde
+langcode: fr
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_schedule_activity_descript
+field_name: field_schedule_activity_descript
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

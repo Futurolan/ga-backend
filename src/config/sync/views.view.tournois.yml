@@ -510,10 +510,10 @@ display:
           entity_type: node
           plugin_id: ga_editions_ref_filter_related_content_titles
       sorts:
-        field_exhibitor_weight_value:
-          id: field_exhibitor_weight_value
-          table: node__field_exhibitor_weight
-          field: field_exhibitor_weight_value
+        field_weight_value:
+          id: field_weight_value
+          table: node__field_weight
+          field: field_weight_value
           relationship: none
           group_type: group
           admin_label: ''

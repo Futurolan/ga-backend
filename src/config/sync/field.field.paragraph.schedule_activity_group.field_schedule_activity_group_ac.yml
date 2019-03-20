@@ -1,0 +1,46 @@
+uuid: a564d33f-8d61-4c7e-9216-3f3ecada9128
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_schedule_activity_group_ac
+    - paragraphs.paragraphs_type.schedule_activity
+    - paragraphs.paragraphs_type.schedule_activity_group
+  module:
+    - entity_reference_revisions
+id: paragraph.schedule_activity_group.field_schedule_activity_group_ac
+field_name: field_schedule_activity_group_ac
+entity_type: paragraph
+bundle: schedule_activity_group
+label: Activités
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      schedule_activity: schedule_activity
+    target_bundles_drag_drop:
+      schedule_activity:
+        enabled: true
+        weight: 7
+      family_activity:
+        weight: 8
+        enabled: false
+      family_activity_group:
+        weight: 9
+        enabled: false
+      schedule_activity_group:
+        weight: 10
+        enabled: false
+      stream_twitch:
+        weight: 11
+        enabled: false
+      stream_youtube:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

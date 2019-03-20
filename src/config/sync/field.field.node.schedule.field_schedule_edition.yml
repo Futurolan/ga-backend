@@ -1,0 +1,29 @@
+uuid: ff9834d6-080c-4a62-94c2-71707acd8d28
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_schedule_edition
+    - node.type.edition
+    - node.type.schedule
+id: node.schedule.field_schedule_edition
+field_name: field_schedule_edition
+entity_type: node
+bundle: schedule
+label: Edition
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      edition: edition
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

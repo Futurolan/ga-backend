@@ -1,0 +1,20 @@
+uuid: ffeafce1-275d-4101-be5b-4e21b152fb4d
+langcode: fr
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - paragraphs
+id: paragraph.field_schedule_activity_date
+field_name: field_schedule_activity_date
+entity_type: paragraph
+type: daterange
+settings:
+  datetime_type: datetime
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

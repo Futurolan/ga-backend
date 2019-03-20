@@ -1,0 +1,19 @@
+uuid: 26c44fe5-4547-40d7-ae58-9e5b1906af14
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_schedule_activity_link
+    - paragraphs.paragraphs_type.schedule_activity
+id: paragraph.schedule_activity.field_schedule_activity_link
+field_name: field_schedule_activity_link
+entity_type: paragraph
+bundle: schedule_activity
+label: Lien
+description: "Utiliser si possible des urls relatives (sans le https://[event].gamers-assembly.net).\r\nExemple : /vips"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

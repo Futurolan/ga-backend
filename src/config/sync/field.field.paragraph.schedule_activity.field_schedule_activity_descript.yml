@@ -1,0 +1,21 @@
+uuid: 4c8c224f-70ca-4580-831f-c3945b007a87
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_schedule_activity_descript
+    - paragraphs.paragraphs_type.schedule_activity
+  module:
+    - text
+id: paragraph.schedule_activity.field_schedule_activity_descript
+field_name: field_schedule_activity_descript
+entity_type: paragraph
+bundle: schedule_activity
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

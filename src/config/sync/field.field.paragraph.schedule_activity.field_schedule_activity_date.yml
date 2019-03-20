@@ -1,0 +1,26 @@
+uuid: 35ca693c-e24c-49a0-9e0c-3fc5daf17b52
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_schedule_activity_date
+    - paragraphs.paragraphs_type.schedule_activity
+  module:
+    - datetime_range
+id: paragraph.schedule_activity.field_schedule_activity_date
+field_name: field_schedule_activity_date
+entity_type: paragraph
+bundle: schedule_activity
+label: Date
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+    default_end_date_type: relative
+    default_end_date: '+1 hour'
+default_value_callback: ''
+settings: {  }
+field_type: daterange
