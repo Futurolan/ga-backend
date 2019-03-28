@@ -5,9 +5,9 @@ dependencies:
   config:
     - field.field.paragraph.schedule_activity.field_schedule_activity_date
     - field.field.paragraph.schedule_activity.field_schedule_activity_descript
-    - field.field.paragraph.schedule_activity.field_schedule_activity_game
     - field.field.paragraph.schedule_activity.field_schedule_activity_link
     - field.field.paragraph.schedule_activity.field_schedule_activity_title
+    - field.field.paragraph.schedule_activity.field_schedule_activity_tourname
     - paragraphs.paragraphs_type.schedule_activity
   module:
     - datetime_range
@@ -31,12 +31,6 @@ content:
     third_party_settings: {  }
     type: text_textarea
     region: content
-  field_schedule_activity_game:
-    weight: 3
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
   field_schedule_activity_link:
     weight: 4
     settings:
@@ -52,6 +46,12 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_schedule_activity_tourname:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
 hidden:
   created: true

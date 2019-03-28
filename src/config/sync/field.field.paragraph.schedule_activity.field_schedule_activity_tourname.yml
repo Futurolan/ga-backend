@@ -1,16 +1,16 @@
-uuid: f1d41edb-0105-40db-a4d5-96e7622e7f48
+uuid: 5bc8d2f2-2363-4e6b-b4c1-fc1a46b46b6d
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_schedule_activity_game
-    - node.type.game
+    - field.storage.paragraph.field_schedule_activity_tourname
+    - node.type.tournament
     - paragraphs.paragraphs_type.schedule_activity
-id: paragraph.schedule_activity.field_schedule_activity_game
-field_name: field_schedule_activity_game
+id: paragraph.schedule_activity.field_schedule_activity_tourname
+field_name: field_schedule_activity_tourname
 entity_type: paragraph
 bundle: schedule_activity
-label: Jeu
+label: Tournoi
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:node'
   handler_settings:
     target_bundles:
-      game: game
+      tournament: tournament
     sort:
       field: title
       direction: ASC

@@ -1,12 +1,12 @@
-uuid: 7d5a2297-5665-4ff0-8281-30677950cef6
+uuid: 08337146-8f63-410d-98d9-5cc84228a28f
 langcode: fr
 status: true
 dependencies:
   module:
     - node
     - paragraphs
-id: paragraph.field_schedule_activity_game
-field_name: field_schedule_activity_game
+id: paragraph.field_schedule_activity_tourname
+field_name: field_schedule_activity_tourname
 entity_type: paragraph
 type: entity_reference
 settings:

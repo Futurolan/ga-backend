@@ -758,7 +758,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No moderated content available. Only pending versions of content, such as drafts, are listed here.'
+          content: 'Aucun contenu modéré disponible. Seules les versions de contenu en attente, telles que ''Brouillon'', sont listées ici.'
           plugin_id: text_custom
       relationships:
         nid:
