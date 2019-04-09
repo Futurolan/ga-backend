@@ -1,0 +1,19 @@
+uuid: 96a88821-3d15-42f0-a002-95f10df122df
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - paragraphs.paragraphs_type.stream_youtube
+id: paragraph.stream_youtube.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: stream_youtube
+label: Nom
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: bbd1d9dd-1a5c-4084-9c87-9e3e858c12da
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - paragraphs.paragraphs_type.stream_twitch
+id: paragraph.stream_twitch.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: stream_twitch
+label: Nom
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
