@@ -10,5 +10,6 @@ weight: 0
 is_admin: false
 permissions:
   - 'access content'
+  - 'bypass graphql field security'
   - 'execute graphql requests'
   - 'execute persisted graphql requests'

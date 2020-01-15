@@ -23,7 +23,7 @@ Se rendre sur http://localhost:8080 et lancer l'installation du site avec les id
 Dans le docker importer la configuration
 ```
 drush config-set "system.site" uuid "0ef2d244-80fd-4115-8ee4-2b1b674b3366"
-drush config-set "language.entity.fr" uuid "7b695c96-fde9-42af-98ab-6e6fcae869f1"```
+drush config-set "language.entity.fr" uuid "7b695c96-fde9-42af-98ab-6e6fcae869f1"
 ```
 
 *Linux: Si vous avez des problèmes de permissions, vous pouvez les régler avec les acl.*
