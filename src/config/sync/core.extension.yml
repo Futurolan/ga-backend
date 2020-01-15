@@ -1,6 +1,7 @@
 module:
   admin_toolbar: 0
   adminimal_admin_toolbar: 0
+  better_exposed_filters: 0
   block: 0
   breakpoint: 0
   ckeditor: 0
@@ -36,6 +37,7 @@ module:
   override_node_options: 0
   page_cache: 0
   path: 0
+  path_alias: 0
   scheduled_publish: 0
   smtp: 0
   system: 0

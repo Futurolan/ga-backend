@@ -32,7 +32,8 @@ class RelatedPartnerCategory extends ManyToOne {
         $storage = \Drupal::entityManager()->getStorage('node');
         $relatedContentQuery = \Drupal::entityQuery('node')
             ->condition('type', array('partner_category'), 'IN')
-            ->condition('status', 1); //ensuring that the node is published
+            ->condition('status', 1) //ensuring that the node is published
+            ->sort('title' , 'ASC');
         $relatedContentIds = $relatedContentQuery->execute(); //returns an array of node ID's
         $res = array();
         foreach($relatedContentIds as $contentId){

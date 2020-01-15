@@ -17,3 +17,4 @@
 # Ignore SimpleTest multi-site environment.
 /src/web/sites/simpletest
 
+db

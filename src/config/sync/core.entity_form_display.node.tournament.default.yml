@@ -23,6 +23,7 @@ dependencies:
     - field.field.node.tournament.field_weight
     - image.style.crop_preview
     - node.type.tournament
+    - workflows.workflow.publish_unpublish_workflow
   module:
     - content_moderation
     - field_group

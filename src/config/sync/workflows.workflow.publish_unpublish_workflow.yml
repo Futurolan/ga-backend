@@ -48,3 +48,4 @@ type_settings:
     node:
       - news
       - tournament
+  default_moderation_state: draft

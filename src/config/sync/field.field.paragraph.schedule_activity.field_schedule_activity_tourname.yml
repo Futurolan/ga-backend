@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.storage.paragraph.field_schedule_activity_tourname
-    - node.type.tournament
     - paragraphs.paragraphs_type.schedule_activity
 id: paragraph.schedule_activity.field_schedule_activity_tourname
 field_name: field_schedule_activity_tourname
@@ -17,13 +16,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: views
   handler_settings:
-    target_bundles:
-      tournament: tournament
-    sort:
-      field: title
-      direction: ASC
-    auto_create: false
-    auto_create_bundle: ''
+    view:
+      view_name: entity_ref_tournoi
+      display_name: entity_reference_1
+      arguments: {  }
 field_type: entity_reference

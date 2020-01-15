@@ -6,6 +6,7 @@ dependencies:
     - node.type.edition
     - user.role.moderator
   module:
+    - datetime
     - node
     - user
 id: edition
@@ -15,7 +16,6 @@ description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -590,6 +590,8 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
+            operator_limit_selection: false
+            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -606,21 +608,19 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
+        field_edition_start_date_value:
+          id: field_edition_start_date_value
+          table: node__field_edition_start_date
+          field: field_edition_start_date_value
           relationship: none
           group_type: group
           admin_label: ''
+          order: DESC
           exposed: false
           expose:
             label: ''
           granularity: second
+          plugin_id: datetime
       title: Editions
       header: {  }
       footer: {  }
