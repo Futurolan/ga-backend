@@ -20,15 +20,6 @@ steps:
         from_secret: ssh_key
       script:
         - bash /root/ga/update.sh drupal
-  - name: update-db
-    image: appleboy/drone-ssh
-    settings:
-      host: 192.168.1.8
-      username: root
-      port: 22
-      key:
-        from_secret: ssh_key
-      script:
         - bash /root/ga/update-db.sh
   - name: discord notification
     image: appleboy/drone-discord
