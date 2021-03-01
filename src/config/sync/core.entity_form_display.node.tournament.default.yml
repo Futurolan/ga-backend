@@ -18,7 +18,9 @@ dependencies:
     - field.field.node.tournament.field_tournament_size
     - field.field.node.tournament.field_tournament_subscribe_url
     - field.field.node.tournament.field_tournament_toornament_id
+    - field.field.node.tournament.field_tournament_toornament_sid
     - field.field.node.tournament.field_tournament_type
+    - field.field.node.tournament.field_tournament_warlegend_id
     - field.field.node.tournament.field_tournament_weezevent_id
     - field.field.node.tournament.field_weezevent_team_size
     - field.field.node.tournament.field_weight
@@ -51,9 +53,10 @@ third_party_settings:
     group_tournament_inscriptions:
       children:
         - field_tournament_subscribe_url
-        - field_tournament_weezevent_id
-        - field_weezevent_team_size
         - field_tournament_reserved_slot
+        - group_weezevent
+        - group_warlegend
+        - group_toor
       parent_name: ''
       weight: 12
       format_type: fieldset
@@ -90,6 +93,46 @@ third_party_settings:
         required_fields: true
       label: Partenaire
       region: content
+    group_toor:
+      children:
+        - field_tournament_toornament_sid
+      parent_name: group_tournament_inscriptions
+      weight: 32
+      format_type: fieldset
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Toornament
+    group_weezevent:
+      children:
+        - field_tournament_weezevent_id
+        - field_weezevent_team_size
+      parent_name: group_tournament_inscriptions
+      weight: 30
+      format_type: fieldset
+      region: hidden
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Weezevent
+    group_warlegend:
+      children:
+        - field_tournament_warlegend_id
+      parent_name: group_tournament_inscriptions
+      weight: 31
+      format_type: fieldset
+      region: hidden
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Warlegend
 id: node.tournament.default
 targetEntityType: node
 bundle: tournament
@@ -180,7 +223,7 @@ content:
     type: options_select
     region: content
   field_tournament_reserved_slot:
-    weight: 31
+    weight: 29
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -216,14 +259,30 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_tournament_toornament_sid:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_tournament_type:
     weight: 5
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
+  field_tournament_warlegend_id:
+    weight: 30
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_tournament_weezevent_id:
-    weight: 29
+    weight: 32
     settings:
       size: 60
       placeholder: ''
@@ -231,7 +290,7 @@ content:
     type: string_textfield
     region: content
   field_weezevent_team_size:
-    weight: 30
+    weight: 33
     settings:
       placeholder: ''
     third_party_settings: {  }

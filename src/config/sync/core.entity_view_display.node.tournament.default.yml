@@ -18,7 +18,9 @@ dependencies:
     - field.field.node.tournament.field_tournament_size
     - field.field.node.tournament.field_tournament_subscribe_url
     - field.field.node.tournament.field_tournament_toornament_id
+    - field.field.node.tournament.field_tournament_toornament_sid
     - field.field.node.tournament.field_tournament_type
+    - field.field.node.tournament.field_tournament_warlegend_id
     - field.field.node.tournament.field_tournament_weezevent_id
     - field.field.node.tournament.field_weezevent_team_size
     - field.field.node.tournament.field_weight
@@ -159,12 +161,28 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_tournament_toornament_sid:
+    weight: 20
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_tournament_type:
     weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
+    region: content
+  field_tournament_warlegend_id:
+    weight: 19
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_tournament_weezevent_id:
     weight: 13
