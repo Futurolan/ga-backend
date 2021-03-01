@@ -18,7 +18,6 @@ dependencies:
     - field.field.node.tournament.field_tournament_size
     - field.field.node.tournament.field_tournament_subscribe_url
     - field.field.node.tournament.field_tournament_toornament_id
-    - field.field.node.tournament.field_tournament_toornament_sid
     - field.field.node.tournament.field_tournament_type
     - field.field.node.tournament.field_tournament_warlegend_id
     - field.field.node.tournament.field_tournament_weezevent_id
@@ -155,14 +154,6 @@ content:
     region: content
   field_tournament_toornament_id:
     weight: 16
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_tournament_toornament_sid:
-    weight: 20
     label: above
     settings:
       link_to_entity: false
