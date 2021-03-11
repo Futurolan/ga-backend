@@ -19,7 +19,7 @@ default_value: {  }
 default_value_callback: ''
 settings:
   file_directory: tournament
-  file_extensions: pdf
+  file_extensions: pdf zip
   max_filesize: ''
   description_field: true
   handler: 'default:file'
